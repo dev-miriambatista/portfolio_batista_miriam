@@ -89,19 +89,13 @@ header {
 
 .texto__apresentacao {
     position: absolute;
-    /* Posiciona o texto sobre a imagem */
     top: 73px;
-    /* Alinhado ao topo da imagem */
     left: 0;
-    /* Alinhado à esquerda da imagem */
     color: black;
-    /* Cor do texto (ajuste conforme necessário) */
     padding: 10px;
-    /* Espaçamento interno para o texto */
     width: 100%;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  
 }
 
 .foto-miriam {
