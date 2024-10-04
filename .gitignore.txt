@@ -1,0 +1,13 @@
+$Recycle.Bin/
+$SysReset/
+DumpStack.log.tmp
+Program Files (x86)/
+Program Files/
+ProgramData/
+Recovery/
+Windows/
+bkp/
+hiberfil.sys
+laragon-6.0.0/
+pagefile.sys
+swapfile.sys
