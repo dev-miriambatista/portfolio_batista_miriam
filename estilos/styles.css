@@ -2,9 +2,8 @@ html,
 body {
     width: 100%;
     display: flex;
-    background-image: url(image/bg_body.png);
+    background-image: url("../image/bg_body_resp.png");
     flex-direction: row;
-
 }
 
 header {
@@ -14,7 +13,7 @@ header {
     width: 18vw;
     left: 0px;
     margin: 0;
-    background-image: url(image/bg_body.png);
+    background-image: url(/image/bg_body.png);
     box-shadow: rgba(243, 81, 205, 0.25) 0px 50px 100px -20px, rgba(238, 143, 195, 0.3) 0px 30px 60px -30px, rgba(163, 7, 124, 0.35) 0px -2px 6px 0px inset;
     align-items: center;
 }
@@ -23,16 +22,18 @@ header {
     transform: rotate(-90deg);
     margin: 8%;
     margin: 78% 0% 0% 0%;
+    font-size: 3rem;
 }
 
 .material-icons {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-bottom: 45px;
-
+    font-size: 2rem;
+}
     .nav {
         width: 15px;
     }
-}
+
 
 .lista_cabecalho {
     display: flex;
@@ -80,7 +81,7 @@ header {
 }
 
 .post-it {
-    width: 45vw;         
+    width: 65vw;         
     display: block;
     position: absolute;
     top: 20px;
@@ -89,7 +90,7 @@ header {
 
 .texto__apresentacao {
     position: absolute;
-    top: 73px;
+    top: 60px;
     left: 0;
     color: black;
     padding: 10px;
@@ -101,6 +102,6 @@ header {
 .foto-miriam {
     display:flex;
     width: 45vw;
-    margin-top:10vh;
+    margin-top:35vh;
     transform: rotate(5deg);
 }
