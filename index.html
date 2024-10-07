@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,67 +8,65 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <title>Portfólio</title>
 </head>
+
 <body>
-<header class="container_cabecalho">
-    <h1 class="titulo__cabecalho">Portfólio</h1>
-    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-    <div id="menu">
-        <nav class="navegador">
-            <ul class="lista_cabecalho">
-                <li class="nav_item_post_it_orange">
-                    <a class="link_orange" href="#index.html">
-                        <img class="img_orange" src="image/post_it_width_orange.png" alt="Home">
-                        <span class="link_text">Home</span>
-                    </a>
-                </li>
-                <li class="nav_item_post_it_pink">
-                    <a class="link_pink" href="#sobre_mim.html">
-                        <img class="img_pink" src="image/post_it_width_pink.png" alt="Sobre-mim">
-                        <span class="link_text">Sobre mim</span>
-                    </a>
-                </li>
-                <li class="nav_item_post_it_yellow">
-                    <a class="link_yellow" href="#projetos.html">
-                        <img class="img_yellow" src="image/post_it_width_yellow.png" alt="Projetos">
-                        <span class="link_text">Projetos</span>
-                    </a>
-                </li>
-                <li class="nav_item_post_it_green">
-                    <a class="link_green" href="#contatos.html">
-                        <img class="img_green" src="image/post_it_width_green.png" alt="Contatos">
-                        <span class="link_text">Contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        
-    </div>
-</header>
-<section class="contato">
-    <ul class="lista__contato">
-        <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
-        <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
-        <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
-        <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
-        <li><img class="contato__icon" src="image/logo-pinterest.jpg" alt="pinterest"></li>
-        <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
-    </ul>
-</section>
+    <header class="container_cabecalho">
+        <h1 class="titulo__cabecalho">Portfólio</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <div id="menu">
+            <nav class="navegador">
+                <ul class="lista_cabecalho">
+                    <li class="nav_item">
+                        <a class="link_nav" href="#index.html">HOME
+                            <a class="link_nav" href="#projetos.html">
+                                <img class="yellow" src="image/post_it_width_yellow.png" alt="Projetos">
+                            </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="link_nav">
+                            <img class="orange" src="image/post_it_width_orange.png" alt="Home">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="link_nav" href="#sobre_mim.html">
+                            <img class="pink" src="image/post_it_width_pink.png" alt="Sobre-mim">
+                        </a>
+                    </li>
 
-<div class="container__apresentacao">
+                    <li class="nav_item">
+                        <a class="link_nav" href="#contatos.html">
+                            <img class="green" src="image/post_it_width_green.jpg" alt="Contatos">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-    <picture>
-        <img class="post__it" src="image/post-it_850.png" alt="post_it">
-    </picture>
-    
-    <picture class="perfil">
-        <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
-    </picture>
+        </div>
+    </header>
+    <section class="contato">
+        <ul class="lista__contato">
+            <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
+            <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
+            <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
+            <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
+            <li><img class="contato__icon" src="image/logo-pinterest.jpg" alt="pinterest"></li>
+            <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
+        </ul>
+    </section>
+
+    <div class="container__apresentacao">
+
+        <picture>
+            <img class="post__it" src="image/post-it_850.png" alt="post_it">
+        </picture>
+
+        <picture class="perfil">
+            <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
+        </picture>
         <script>
             const icons = document.getElementById('icons');
             const burguer = document.getElementById('burguer');
-        
+
             function mudouTamanho() {
                 if (window.innerWidth >= 768) {
                     menu.style.display = 'block';  // Mostra os ícones no desktop
@@ -75,28 +74,28 @@
                     menu.style.display = 'none';   // Oculta os ícones em telas pequenas
                 }
             }
-        
+
             function clickMenu() {
                 // Obtém o valor real da propriedade display usando getComputedStyle
                 const displayStyle = window.getComputedStyle(menu).display;
-                
+
                 if (displayStyle === 'block') {
                     menu.style.display = 'none'; // Oculta o menu ao clicar se estiver visível
                 } else {
                     menu.style.display = 'block'; // Exibe o menu ao clicar se estiver oculto
                 }
             }
-        
+
             window.onload = () => {
                 mudouTamanho(); // Chama a função quando a página carrega para ajustar a visibilidade
             };
-        
+
             window.onresize = () => {
                 mudouTamanho(); // Chama a função sempre que a janela for redimensionada
             };
         </script>
-        
-        
+
+
 </body>
 
 
