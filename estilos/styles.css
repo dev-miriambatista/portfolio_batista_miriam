@@ -30,9 +30,10 @@ header {
     margin-bottom: 45px;
     font-size: 2rem;
 }
-    .nav {
-        width: 15px;
-    }
+
+.nav {
+    width: 15px;
+}
 
 
 .lista_cabecalho {
@@ -49,17 +50,18 @@ header {
 
 .nav_item {
     display: flex;
-    background-color: crimson;
-    margin: 10% 0% 10% 0%;
+    background-image: url('/image/post_it_width_pink.png');
+    /* background-color: crimson; */
+    margin: 25% 0% 25% 0%;
     color: white;
-    width: 16vw;
+    width: 13vw;
     height: 5vh;
     align-items: center;
     justify-content: center;
 }
 
 .nav_item:hover {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     color: black;
 }
 
@@ -75,33 +77,116 @@ header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     position: relative;
     align-items: center;
 }
 
-.post-it {
-    width: 65vw;         
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.contato__icon{
+    display:none;
+    list-style: none;
+    text-decoration: none;
 }
 
-.texto__apresentacao {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    color: black;
-    padding: 10px;
+
+.container {
+    margin: 0px;
+}
+
+.post__it {
+    width: 60vw;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+.post-desk {
+    width: 5vw;
+}
+
+
+.foto-miriam {
+    display: flex;
+    width: 45vw;
+    transform: rotate(-10deg);
+    position: relative;
+    z-index: 0;
+    margin-top: -8vh;
+}
+
+@media (min-width: 768px) {
+
+    .container_cabecalho {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 18vh;
+        top: 0px;
+        position: fixed;
+        justify-content: flex-start;
+        gap:20vw;
+
+    }
+
+    .contato__icon{
+        width: 4vw;
+    }
+
+    .lista_cabecalho {
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        justify-content: space-between;
+    }
+
+.nav_item {
+    display: flex;
+    color: white;
+    width: 16vw;
+    height: 5vh;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.titulo__cabecalho {
+    display: flex;
+    transform: rotate(0deg);
+    font-size: 3rem;
+    margin: 2%;
+}
+
+.navegador {
+    display: flex;
+}
+.link_nav{
+    width: 7vw;
+    margin: 0px;
+}
+
+.pink, .yellow, .orange, .green{
+    width: 12vw;
+}
+
+
+.container__apresentacao {
+    display: flex;
+    top: 30vh;
     width: 100%;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+
+.post__it {
+
+    width: 30vw;
 }
 
 .foto-miriam {
-    display:flex;
-    width: 45vw;
-    margin-top:35vh;
-    transform: rotate(5deg);
+    width: 30vw;
 }
+
+.material-icons {
+    display: none;
+}
+

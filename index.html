@@ -12,38 +12,34 @@
     <h1 class="titulo__cabecalho">Portfólio</h1>
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
     <div id="menu">
-    <nav>
+    <nav class="navegador">
         <ul class="lista_cabecalho">
-            <li class="nav_item"><a class="link_nav" href="index.html">HOME</a></li>
-            <li class="nav_item"><a class="link_nav" href="quem.html">SOBRE MIM</a></li>
-            <li class="nav_item"><a class="link_nav" href="projetos.html">PROJETOS</a></li>
-            <li class="nav_item"><a class="link_nav" href="#">CONTATO</a></li>
+            <li class="nav_item"><img class="orange" src="image/post_it_width_orange.png" alt=""><a class="link_nav" href="index.html">HOME</a></li>
+            <li class="nav_item"><img class="pink" src="image/post_it_width_pink.png" alt=""><a class="link_nav" href="quem.html">SOBRE MIM</a></li>
+            <li class="nav_item"><img class="yellow" src="image/post_it_width_yellow.png" alt=""><a class="link_nav" href="projetos.html">PROJETOS</a></li>
+            <li class="nav_item"><img class="green" src="image/post_it_width_green.png" alt=""><a class="link_nav" href="#">CONTATO</a></li>
         </ul>
     </nav>
     </div>
 </header>
 
 <div class="container__apresentacao">
-    <figure class="container">
-        <picture>
-            <img class="post-it" src="/image/post-it-1.png" alt="post-it">
-        </picture>
-        <figcaption>
-            <!-- <pre class="texto__apresentacao">
-                Sou Miriam Batista, 
-                desenvolvedora focada em
-                criar soluções digitais 
-                práticas e funcionais.
-                Aqui você encontrará uma 
-                seleção dos meus
-                projetos e habilidades.
-            </pre> -->
-        </figcaption>
-    </figure>
+    <section class="contato">
+        <ul>
+            <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
+            <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
+            <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
+            <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
+            <li><img class="contato__icon" src="image/logo-pinterest.jpg" alt="pinterest"></li>
+            <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
+        </ul>
+    </section>
+    <picture>
+        <img class="post__it" src="image/post-it_850.png" alt="post_it">
+    </picture>
     
     <picture class="perfil">
-        <source media="(max-width: 768px)" src="">
-        <img class="foto-miriam" src="image/miriam.png" alt="foto-miriam">
+        <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
     </picture>
         <script>
             const icons = document.getElementById('icons');
