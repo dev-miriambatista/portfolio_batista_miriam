@@ -26,7 +26,6 @@ header {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 .material-icons {
     margin-top: 90px;
     margin-bottom: 10px;
@@ -41,7 +40,6 @@ header {
 
 .nav_item {
     display: flex;
-    margin: 15% 0% 15% 0%;
     color: white;
     width: 20vw;
     align-items: center;
@@ -52,7 +50,9 @@ header {
 .img_pink,
 .img_green,
 .img_yellow {
-    width: 20vw;
+    display: flex;
+    width: 26vw;
+    height: 8vh;
 }
 
 .pink,
@@ -60,8 +60,8 @@ header {
 .orange,
 .green {
     display: flex;
-    width: 30vw;
-
+    width: 25vw;
+    height: 8vh;
 }
 
 .link_nav {
@@ -73,21 +73,10 @@ header {
     margin-left: -30px;
 }
 
-
-
-
-.nav_item:hover {
-    /* background-color: chartreuse; */
-    color: black;
-}
-
-
-
 .container__apresentacao {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    position: relative;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
@@ -105,24 +94,23 @@ header {
 }
 
 .post__it {
-    width: 60vw;
+    width: 70vw;
+    height: auto;
     position: relative;
     z-index: 1;
     margin: 0;
 }
 
 .post-desk {
-    width: 25vw;
+    width: 100vw;
+    height: auto;
 }
 
 
 .foto-miriam {
     display: flex;
-    width: 45vw;
-    transform: rotate(-10deg);
-    position: relative;
-    z-index: 0;
-    margin-top: -8vh;
+    width: 95vw;
+    transform: rotate(0deg);
 }
 
 /* ____________________________________________________________________________________________________________ */
@@ -137,13 +125,13 @@ header {
         top: 0px;
         position: fixed;
         justify-content: flex-start;
-        gap: 20vw;
 
     }
 
     .contato__icon {
         display: flex;
         width: 4vw;
+        animation: float 3s ease-in-out infinite;
     }
 
     .lista_cabecalho {
@@ -184,8 +172,20 @@ header {
     .yellow,
     .orange,
     .green {
-        width: 12vw;
+        width: 150px;
+    height: auto;
     }
+    .contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista__contato{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
 
 
     .container__apresentacao {
@@ -198,12 +198,12 @@ header {
     }
 
     .post__it {
-
         width: 30vw;
     }
 
     .foto-miriam {
         width: 30vw;
+        transform: rotate(10deg);
     }
 
     .material-icons {
