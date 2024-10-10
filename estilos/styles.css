@@ -46,22 +46,13 @@ header {
     justify-content: center;
 }
 
-.img_orange,
-.img_pink,
-.img_green,
-.img_yellow {
-    display: flex;
-    width: 26vw;
-    height: 8vh;
-}
-
 .pink,
 .yellow,
 .orange,
 .green {
     display: flex;
     width: 25vw;
-    height: 8vh;
+    height: 5vh;
 }
 
 .link_nav {
@@ -76,8 +67,7 @@ header {
 .container__apresentacao {
     display: flex;
     width: 100%;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column;                                                                                                                                                  
 }
 
 .lista__contato {
@@ -109,7 +99,7 @@ header {
 
 .foto-miriam {
     display: flex;
-    width: 95vw;
+    width: 60vw;
     transform: rotate(0deg);
 }
 
@@ -178,16 +168,15 @@ header {
     .contato{
         display: flex;
         flex-direction: column;
+        left: 0;
     }
 
     .lista__contato{
         display: flex;
+        width: 10vw;
         flex-direction: column;
-        align-items:center;
+        align-items:start;
     }
-
-
-
     .container__apresentacao {
         display: flex;
         top: 30vh;
@@ -195,6 +184,7 @@ header {
         flex-direction: row;
         position: relative;
         justify-content: space-around;
+        margin-left: 0;
     }
 
     .post__it {
@@ -203,7 +193,7 @@ header {
 
     .foto-miriam {
         width: 30vw;
-        transform: rotate(10deg);
+        transform: rotate(-3deg);
     }
 
     .material-icons {
