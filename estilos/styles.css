@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+
 html,
 body {
     width: 100%;
@@ -21,7 +24,7 @@ header {
 
 .titulo__cabecalho {
     transform: rotate(-90deg);
-    margin-top:20vh;
+    margin-top: 20vh;
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -67,7 +70,7 @@ header {
 .container__apresentacao {
     display: flex;
     width: 100%;
-    flex-direction: column;                                                                                                                                                  
+    flex-direction: column;
 }
 
 .lista__contato {
@@ -112,16 +115,26 @@ header {
         flex-direction: row;
         width: 100vw;
         height: 18vh;
-        top: 0px;
+        /* Altura do cabeçalho */
+        top: 0;
         position: fixed;
         justify-content: flex-start;
-
+        z-index: 2000;
+        background-color: black;
+        color: aliceblue;
+        background-size: cover;
+        /* Faz a imagem cobrir todo o cabeçalho */
+        background-position: center;
+        /* Centraliza a imagem */
+        background-repeat: no-repeat;
+        /* Impede que a imagem se repita */
     }
 
-    .contato__icon {
+    .titulo__cabecalho {
         display: flex;
-        width: 4vw;
-        animation: float 3s ease-in-out infinite;
+        transform: rotate(0deg);
+        font-size: 3rem;
+        margin: 2%;
     }
 
     .lista_cabecalho {
@@ -129,6 +142,7 @@ header {
         flex-direction: row;
         width: 100px;
         justify-content: space-between;
+        z-index: 0;
     }
 
     .nav_item {
@@ -140,13 +154,6 @@ header {
         color: white;
         justify-content: center;
         margin: 4vw;
-    }
-
-    .titulo__cabecalho {
-        display: flex;
-        transform: rotate(0deg);
-        font-size: 3rem;
-        margin: 2%;
     }
 
     .navegador {
@@ -163,29 +170,95 @@ header {
     .orange,
     .green {
         width: 150px;
-    height: auto;
-    }
-    .contato{
-        display: flex;
-        flex-direction: column;
-        left: 0;
+        height: auto;
+
+
+
+    .pink,
+    .yellow,
+    .orange,
+    .green:hover {
+            box-shadow: 1px 1px firebrick,
+                        2px 2px firebrick, 
+                        3px 3px firebrick,
+                        4px 4px firebrick,
+                        5px 5px firebrick,
+                        6px 6px firebrick,
+                        2px 2px firebrick;
+            transform: translateX(-3px);
+          }
     }
 
-    .lista__contato{
+    .main {
+        width: 100vw;
         display: flex;
-        width: 10vw;
         flex-direction: column;
-        align-items:start;
     }
+
     .container__apresentacao {
-        display: flex;
-        top: 30vh;
-        width: 100%;
+        flex: 1;
+        margin-top: 25vh;
+        width: 100vw;
         flex-direction: row;
-        position: relative;
-        justify-content: space-around;
-        margin-left: 0;
+        justify-content: center;
     }
+
+    .sobre_mim {
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+        margin: auto;
+        margin: 30vh auto 30vh auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        font: normal normal 0.9rem "arial";
+        box-shadow: black 0px 0px 0px 2px inset, rgb(0, 0, 0) 10px -10px 0px -3px, rgb(255, 255, 255) 10px -10px, rgb(0, 0, 0) 20px -20px 0px -3px, rgb(255, 255, 255) 20px -20px, rgb(0, 0, 0) 30px -30px 0px -3px, rgb(255, 255, 255) 30px -30px, rgb(0, 0, 0) 40px -40px 0px -3px, rgb(255, 255, 255) 40px -40px;
+    }
+
+    .titulo_sobre_mim {
+        width: 10vw;
+        text-align: justify;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .par_sobre_mim {
+
+        text-align: justify;
+        margin-left: 5vw;
+
+    }
+
+    .contato__icon {
+        display: flex;
+        width: 4vw;
+        margin-bottom: 5%;
+        border-radius: 50%;
+    }
+
+
+    .contato__icon:hover {
+        box-shadow: 1px 1px rgb(0, 0, 0),
+        2px 2px rgb(255, 255, 255), 
+        3px 3px rgb(0, 0, 0),
+        4px 4px rgb(255, 255, 255),
+        5px 5px rgb(0, 0, 0),
+        6px 6px rgb(255, 255, 255),
+        7px 7px rgb(0, 0, 0),
+        8px 8px rgb(255, 255, 255);
+        transform: translateX(-3px);
+      }
+
+    .lista__contato {
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        align-items: normal;
+
+    }
+
 
     .post__it {
         width: 30vw;

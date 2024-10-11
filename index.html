@@ -17,14 +17,14 @@
             <nav class="navegador">
                 <ul class="lista_cabecalho">
                     <li class="nav_item">
-                        <a class="link_nav" href="#index.html">HOME
+                        <a class="link_nav" href="#index.html">
                             <a class="link_nav" href="#projetos.html">
                                 <img class="yellow" src="image/post-it/orange38.png" alt="home">
                             </a>
                     </li>
                     <li class="nav_item">
                         <a href="link_nav">
-                            <img class="orange" src="image/post-it/verde38.png"  alt="sobre_mim">
+                            <img class="orange" src="image/post-it/verde38.png" alt="sobre_mim">
                         </a>
                     </li>
                     <li class="nav_item">
@@ -35,7 +35,7 @@
 
                     <li class="nav_item">
                         <a class="link_nav" href="#contatos.html">
-                            <img class="green" src="image/post-it/red38.png"  alt="Contatos">
+                            <img class="green" src="image/post-it/red38.png" alt="Contatos">
                         </a>
                     </li>
                 </ul>
@@ -43,60 +43,86 @@
 
         </div>
     </header>
+    <main>
+        <section class="container__apresentacao">
+            <picture>
+                <img class="post__it" src="image/post-it_85.png" alt="post_it">
+            </picture>
+            <picture class="perfil">
+                <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
+            </picture>
+        </section>
 
-    <section class="contato">
-        <ul class="lista__contato">
-            <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
-            <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
-            <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
-            <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
-            <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
-        </ul>
+        <section class="sobre_mim">
+            <article>
+                <h1 class="titulo_sobre_mim">Sobre mim</h1>
+                <p class="par_sobre_mim">Oi! Sou Miriam Batista, desenvolvedora curitibana que adora transformar ideias em
+                    experiências digitais únicas e memoráveis. Casada e mãe, sou alguém que valoriza o equilíbrio entre a
+                    vida
+                    pessoal e profissional, acreditando que cada desafio é uma oportunidade de crescimento.</p>
+                <p class="par_sobre_mim">Trabalho com PHP e frameworks MVC, sempre com um olhar criativo e detalhista,
+                    buscando
+                    criar soluções que não só funcionem bem, mas que também ofereçam uma ótima experiência ao usuário. Tenho
+                    um
+                    espírito explorador, e estou constantemente aprendendo novas tecnologias e aprimorando minhas
+                    habilidades
+                    para acompanhar as tendências do mercado.</p>
+                <p class="par_sobre_mim">Além de programadora, sou apaixonada por design e por transformar o comum em algo
+                    especial, incorporando empatia e humor em tudo o que faço. Seja resolvendo problemas complexos ou
+                    melhorando
+                    a interface de um projeto, busco sempre trazer inovação e originalidade, mantendo o usuário no centro
+                    das
+                    minhas decisões.</p>
+            </article>
+     
+
+        <article class="contato">
+            <ul class="lista__contato">
+                <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
+                <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
+                <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
+                <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
+                <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
+            </ul>
+        </section>
+    </main>
+
+    <section>
+        <h1>Projetos</h1>
     </section>
 
 
-    <div class="container__apresentacao">
+    <script>
+        const icons = document.getElementById('icons');
+        const burguer = document.getElementById('burguer');
 
- 
-
-        <picture>
-            <img class="post__it" src="image/post-it_85.png" alt="post_it">
-        </picture>
-
-        <picture class="perfil">
-            <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
-        </picture>
-        <script>
-            const icons = document.getElementById('icons');
-            const burguer = document.getElementById('burguer');
-
-            function mudouTamanho() {
-                if (window.innerWidth >= 768) {
-                    menu.style.display = 'block';  // Mostra os ícones no desktop
-                } else {
-                    menu.style.display = 'none';   // Oculta os ícones em telas pequenas
-                }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';  // Mostra os ícones no desktop
+            } else {
+                menu.style.display = 'none';   // Oculta os ícones em telas pequenas
             }
+        }
 
-            function clickMenu() {
-                // Obtém o valor real da propriedade display usando getComputedStyle
-                const displayStyle = window.getComputedStyle(menu).display;
+        function clickMenu() {
+            // Obtém o valor real da propriedade display usando getComputedStyle
+            const displayStyle = window.getComputedStyle(menu).display;
 
-                if (displayStyle === 'block') {
-                    menu.style.display = 'none'; // Oculta o menu ao clicar se estiver visível
-                } else {
-                    menu.style.display = 'block'; // Exibe o menu ao clicar se estiver oculto
-                }
+            if (displayStyle === 'block') {
+                menu.style.display = 'none'; // Oculta o menu ao clicar se estiver visível
+            } else {
+                menu.style.display = 'block'; // Exibe o menu ao clicar se estiver oculto
             }
+        }
 
-            window.onload = () => {
-                mudouTamanho(); // Chama a função quando a página carrega para ajustar a visibilidade
-            };
+        window.onload = () => {
+            mudouTamanho(); // Chama a função quando a página carrega para ajustar a visibilidade
+        };
 
-            window.onresize = () => {
-                mudouTamanho(); // Chama a função sempre que a janela for redimensionada
-            };
-        </script>
+        window.onresize = () => {
+            mudouTamanho(); // Chama a função sempre que a janela for redimensionada
+        };
+    </script>
 
 
 </body>
