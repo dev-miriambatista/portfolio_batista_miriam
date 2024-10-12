@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link class="icon" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="css's/style.css">
+
     <title>Portfólio</title>
 </head>
 
@@ -18,21 +19,19 @@
                 <ul class="lista_cabecalho">
                     <li class="nav_item">
                         <a class="link_nav" href="#index.html">
-                            <a class="link_nav" href="#projetos.html">
-                                <img class="yellow" src="image/post-it/orange38.png" alt="home">
-                            </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="link_nav">
-                            <img class="orange" src="image/post-it/verde38.png" alt="sobre_mim">
+                            <img class="yellow" src="image/post-it/orange38.png" alt="home">
                         </a>
                     </li>
                     <li class="nav_item">
                         <a class="link_nav" href="#sobre_mim.html">
+                            <img class="orange" src="image/post-it/verde38.png" alt="sobre_mim">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="link_nav" href="#projetos.html">
                             <img class="pink" src="image/post-it/pink38.png" alt="projetos">
                         </a>
                     </li>
-
                     <li class="nav_item">
                         <a class="link_nav" href="#contatos.html">
                             <img class="green" src="image/post-it/red38.png" alt="Contatos">
@@ -40,57 +39,151 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
+
     <main>
         <section class="container__apresentacao">
             <picture>
                 <img class="post__it" src="image/post-it_85.png" alt="post_it">
             </picture>
             <picture class="perfil">
-                <img class="foto-miriam" src="image/miriam-1.png" alt="foto-miriam">
+                <img class="foto-miriam" src="image/miriam_img.jpeg" alt="foto-miriam">
             </picture>
         </section>
 
         <section class="sobre_mim">
-            <article>
+
+            <article class="text_sobre_mim">
                 <h1 class="titulo_sobre_mim">Sobre mim</h1>
-                <p class="par_sobre_mim">Oi! Sou Miriam Batista, desenvolvedora curitibana que adora transformar ideias em
-                    experiências digitais únicas e memoráveis. Casada e mãe, sou alguém que valoriza o equilíbrio entre a
-                    vida
-                    pessoal e profissional, acreditando que cada desafio é uma oportunidade de crescimento.</p>
-                <p class="par_sobre_mim">Trabalho com PHP e frameworks MVC, sempre com um olhar criativo e detalhista,
+                <p>
+                    Oi! Sou Miriam Batista, desenvolvedora curitibana que adora transformar ideias em
+                    experiências digitais únicas e memoráveis. Casada e mãe, sou alguém que valoriza o equilíbrio entre
+                    a vida pessoal e profissional, acreditando que cada desafio é uma oportunidade de crescimento.</p>
+                <p>Trabalho com PHP e frameworks MVC, sempre com um olhar criativo e detalhista,
                     buscando
-                    criar soluções que não só funcionem bem, mas que também ofereçam uma ótima experiência ao usuário. Tenho
+                    criar soluções que não só funcionem bem, mas que também ofereçam uma ótima experiência ao usuário.
+                    Tenho
                     um
                     espírito explorador, e estou constantemente aprendendo novas tecnologias e aprimorando minhas
                     habilidades
                     para acompanhar as tendências do mercado.</p>
-                <p class="par_sobre_mim">Além de programadora, sou apaixonada por design e por transformar o comum em algo
+                <p>Além de programadora, sou apaixonada por design e por transformar o comum em algo
                     especial, incorporando empatia e humor em tudo o que faço. Seja resolvendo problemas complexos ou
                     melhorando
-                    a interface de um projeto, busco sempre trazer inovação e originalidade, mantendo o usuário no centro
+                    a interface de um projeto, busco sempre trazer inovação e originalidade, mantendo o usuário no
+                    centro
                     das
                     minhas decisões.</p>
             </article>
-     
 
-        <article class="contato">
-            <ul class="lista__contato">
-                <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
-                <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
-                <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
-                <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
-                <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
-            </ul>
+
+            <section class="contato">
+                <ul class="lista__contato">
+                    <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
+                    <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
+                    <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
+                    <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
+                    <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
+                </ul>
+            </section>
         </section>
+
+        <!-- SEÇÃO DOS PROJETOS -->
+
+      
+        <ul class="container_projetos">
+         
+
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="descicao_projeto" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+
+            
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="img_card" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+
+            
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="img_card" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+
+            
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="img_card" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+
+            
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="img_card" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+
+            
+            <li class="projeto_item">
+                <h1 class="titulo_card">Book Flix</h1>
+                <img class="img_card" src="image/inscricao.png" alt="projeto bookflix">
+                <div descrição_item>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita sint illum
+                        debitis. Reprehenderit, sequi? Voluptates, iusto in iste cumque dolorem suscipit accusantium
+                        aperiam
+                        corporis, quos placeat dolore, obcaecati quaerat.</p>
+                    <a class="link_card" href="#"><i class="bi bi-github"></i>Github</a>
+                    <a class="link_card" href="#"><i class="bi bi-window-plus">Abrir Projeto</i></a>
+                </div>
+            </li>
+        </ul>
+
+
+    </ul>
+            <!-- FIM DA SEÇÃO DOS PROJETOS -->
+
     </main>
-
-    <section>
-        <h1>Projetos</h1>
-    </section>
-
 
     <script>
         const icons = document.getElementById('icons');
@@ -105,7 +198,6 @@
         }
 
         function clickMenu() {
-            // Obtém o valor real da propriedade display usando getComputedStyle
             const displayStyle = window.getComputedStyle(menu).display;
 
             if (displayStyle === 'block') {
@@ -123,9 +215,6 @@
             mudouTamanho(); // Chama a função sempre que a janela for redimensionada
         };
     </script>
-
-
 </body>
-
 
 </html>
