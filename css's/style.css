@@ -134,7 +134,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font: normal normal 1em 'Protest Strike';
+    font: normal normal 1.2em 'Protest Strike';
     width: 70vw;
     height: auto;
     padding: 3%
@@ -167,7 +167,7 @@ span:hover {
 }
 
 .foto-miriam {
-   width: 40vw;
+   width: 60vw;
     height: auto;
     background-color: var(--background);
     min-height: 90px;
