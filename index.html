@@ -12,82 +12,91 @@
 
 <body>
     <header class="container_cabecalho">
-        <h1 class="titulo__cabecalho">Portfólio</h1>
+        <div class="titulo__cabecalho">
+            <h1 >Portfólio</h1>
+        </div>
+  
+        <nav>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
         <div id="menu">
-            <nav class="navegador">
+        
                 <ul class="lista_cabecalho">
                     <li class="nav_item">
                         <a class="link_nav" href="#index.html">
-                            <img class="yellow" src="image/post-it/orange38.png" alt="home">
+                            <img class="yellow" src="image/post-it/orange38.png" alt="home">Home
                         </a>
                     </li>
                     <li class="nav_item">
                         <a class="link_nav" href="#sobre_mim.html">
-                            <img class="orange" src="image/post-it/verde38.png" alt="sobre_mim">
+                            <img class="orange" src="image/post-it/verde38.png" alt="sobre_mim">Sobre mim
                         </a>
                     </li>
                     <li class="nav_item">
                         <a class="link_nav" href="#projetos.html">
-                            <img class="pink" src="image/post-it/pink38.png" alt="projetos">
+                            <img class="pink" src="image/post-it/pink38.png" alt="projetos">Projetos
                         </a>
                     </li>
                     <li class="nav_item">
                         <a class="link_nav" href="#contatos.html">
-                            <img class="green" src="image/post-it/red38.png" alt="Contatos">
+                            <img class="green" src="image/post-it/red38.png" alt="Contatos">Contatos
                         </a>
                     </li>
                 </ul>
             </nav>
+      
         </div>
     </header>
 
     <main>
         <section class="container__apresentacao">
-            <picture>
-                <img class="post__it" src="image/post-it_85.png" alt="post_it">
-            </picture>
-            <picture class="perfil">
-                <img class="foto-miriam" src="image/miriam_img.jpeg" alt="foto-miriam">
-            </picture>
+<div class="text_apresentation">
+    <h1>Olá, eu sou a <span>Miriam!</span></h1>
+    <figure class="perfil">
+        <img class="foto-miriam" src="image/miriam_img.jpeg" alt="foto-miriam">
+        <figcaption> <p> <span>Desenvolvedora focada</span> em criar soluções digitais práticas e <span>funcionais</span>. 
+            Aqui você encontrará uma seleção dos meus projetos e <span>habilidades.</span></p></figcaption>
+    </figure>
+    
+   
+</div>
+           
         </section>
 
-        <section class="sobre_mim">
-
-            <article class="text_sobre_mim">
-                <h1 class="titulo_sobre_mim">Sobre mim</h1>
-                <p>
-                    Oi! Sou Miriam Batista, desenvolvedora curitibana que adora transformar ideias em
-                    experiências digitais únicas e memoráveis. Casada e mãe, sou alguém que valoriza o equilíbrio entre
-                    a vida pessoal e profissional, acreditando que cada desafio é uma oportunidade de crescimento.</p>
-                <p>Trabalho com PHP e frameworks MVC, sempre com um olhar criativo e detalhista,
-                    buscando
-                    criar soluções que não só funcionem bem, mas que também ofereçam uma ótima experiência ao usuário.
-                    Tenho
-                    um
-                    espírito explorador, e estou constantemente aprendendo novas tecnologias e aprimorando minhas
-                    habilidades
-                    para acompanhar as tendências do mercado.</p>
-                <p>Além de programadora, sou apaixonada por design e por transformar o comum em algo
-                    especial, incorporando empatia e humor em tudo o que faço. Seja resolvendo problemas complexos ou
-                    melhorando
-                    a interface de um projeto, busco sempre trazer inovação e originalidade, mantendo o usuário no
-                    centro
-                    das
-                    minhas decisões.</p>
-            </article>
-
-
-            <section class="contato">
-                <ul class="lista__contato">
-                    <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
-                    <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
-                    <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
-                    <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
-                    <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
-                </ul>
+        <div class="sessão_2">
+            <section class="sobre_mim">
+                <article class="text_sobre_mim">
+                    <h1 class="titulo_sobre_mim">Sobre mim</h1>
+                    <p>
+                        Oi! Sou Miriam Batista, desenvolvedora curitibana que adora transformar ideias em
+                        experiências digitais únicas e memoráveis. Casada e mãe, sou alguém que valoriza o equilíbrio entre
+                        a vida pessoal e profissional, acreditando que cada desafio é uma oportunidade de crescimento.</p>
+                    <p>Trabalho com PHP e frameworks MVC, sempre com um olhar criativo e detalhista,
+                        buscando
+                        criar soluções que não só funcionem bem, mas que também ofereçam uma ótima experiência ao usuário.
+                        Tenho
+                        um
+                        espírito explorador, e estou constantemente aprendendo novas tecnologias e aprimorando minhas
+                        habilidades
+                        para acompanhar as tendências do mercado.</p>
+                    <p>Além de programadora, sou apaixonada por design e por transformar o comum em algo
+                        especial, incorporando empatia e humor em tudo o que faço. Seja resolvendo problemas complexos ou
+                        melhorando
+                        a interface de um projeto, busco sempre trazer inovação e originalidade, mantendo o usuário no
+                        centro
+                        das
+                        minhas decisões.</p>
+                </article>
+                <section class="contato">
+                    <ul class="lista__contato">
+                        <li><img class="contato__icon" src="image/logo-github.jpg" alt="github"></li>
+                        <li><img class="contato__icon" src="image/linkedin-logo.avif" alt="linkdin"></li>
+                        <li><img class="contato__icon" src="image/logo-instagram.jpg" alt="instagram"></li>
+                        <li><img class="contato__icon" src="image/logo-facebook.jpg" alt="facebook"></li>
+                        <li><img class="contato__icon" src="image/inscricao.png" alt="cv"></li>
+                    </ul>
+                </section>
             </section>
-        </section>
+        </div>
 
         <!-- SEÇÃO DOS PROJETOS -->
 
@@ -191,7 +200,7 @@
 
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
-                menu.style.display = 'block';  // Mostra os ícones no desktop
+                menu.style.display = 'flex';  // Mostra os ícones no desktop
             } else {
                 menu.style.display = 'none';   // Oculta os ícones em telas pequenas
             }
@@ -200,10 +209,10 @@
         function clickMenu() {
             const displayStyle = window.getComputedStyle(menu).display;
 
-            if (displayStyle === 'block') {
+            if (displayStyle === 'flex') {
                 menu.style.display = 'none'; // Oculta o menu ao clicar se estiver visível
             } else {
-                menu.style.display = 'block'; // Exibe o menu ao clicar se estiver oculto
+                menu.style.display = 'flex'; // Exibe o menu ao clicar se estiver oculto
             }
         }
 
