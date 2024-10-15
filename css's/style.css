@@ -30,7 +30,7 @@ body {
     width: 100%;
     display: flex;
     background-image: url("../image/bg_body_resp.png");
-    flex-direction: row;
+    flex-direction: column;
     color: var(--color-0);
 }
 
@@ -41,8 +41,7 @@ body {
     width: 100vw;
     top: 0px;
     margin: 0;
-    background-image: linear-gradient(to top,
-            #9DE4CE, #F2B199, #F28A80);
+    background-color: var(--color-2);
     align-items: center;
     align-items: flex-end;
     justify-content: space-between;
@@ -64,8 +63,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-
-
 }
 
 .material-icons {
@@ -74,8 +71,7 @@ body {
     font-family: 'Material Icons';
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top,
-            #F2B199, #F28A80, #F2EB8D);
+    background-color: var(--color-2);
     border: none;
     cursor: pointer;
 }
@@ -129,33 +125,40 @@ body {
     text-align: justify;
 }
 
-.text_apresentation {
+.text_apresentacao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font: normal normal 1.2em 'Protest Strike';
-    width: 70vw;
+    width: 90vw;
     height: auto;
-    padding: 3%
-}
-
-.text_apresentation h1{
-    padding: 5%;
+    padding: 3%;
+    margin-bottom: 10vh;
 }
 
 span {
     font: normal normal 1em 'Protest Strike';
     color: var(--color-0);
-    transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transition: font 1s ease, color 1s ease, transform 1s ease;
 }
 
 span:hover {
     font: normal bolder 1.2em 'Londrina Sketch';
-    color: var(--span);
+    color: var(--color-0);
     transform: scale(1.05);
 }
 
+.contato__icon {
+    display: flex;
+    font-size: 4rem;
+    padding: 2px;
+    color: var(--color-5);
+    border-radius: 50%;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
 
 .lista__contato {
     text-decoration: none;
@@ -163,12 +166,12 @@ span:hover {
 }
 
 .contato__icon {
-    display: none;
+    display: flex;
+
 }
 
 .foto-miriam {
-   width: 60vw;
-    height: auto;
+
     background-color: var(--background);
     min-height: 90px;
     border: 0.7em solid var(--color-1);
@@ -195,27 +198,74 @@ span:hover {
 
 .sessão_2 {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     align-items: center;
     background-color: var(--color-3);
-    margin: 10vh 0;
 }
 
+.sobre_mim {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 80%;
+    margin: auto;
+    padding: 3%;
+    align-items: center;
+    font: normal normal 0.9rem "arial";
+    border-radius: 1em;
+    color: var(--color-0);
+    background-image: url("../image/bg_body_resp.png");
+    box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
+        var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
+        var(--color-1) 20px -20px, var(--color-5) 30px -30px 0px -3px,
+        var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
+        var(--color-1) 40px -40px;
+}
+
+.titulo_sobre_mim {
+    width: 50vw;
+    text-align: justify;
+    margin: 2vh auto;
+    color: var(--color-text-white);
+}
+
+.text_sobre_mim {
+    flex-direction: column;
+    text-align: justify;
+    width: 90vw;
+    margin: 10%
+}
+
+.sobre_mim p{
+    margin: 1% 3%
+}
+
+/* ______________________________sessão projetos__________________________ */
 
 .container_projetos {
     display: flex;
     width: 85vw;
     flex-wrap: wrap;
-    margin: 2vw;
+    margin: 15% auto;
     gap: 100px;
+}
+
+.sessao_3 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_projetos h1 {
+    display: block;
 }
 
 .projeto_item {
     flex-grow: 1;
     border-radius: 1em;
     background-color: var(--color-1);
-    width: 19vw;
+    width: 33vw;
     min-height: 80px;
     border: 3px solid var(--color-2);
     padding: 15px;
@@ -228,15 +278,15 @@ span:hover {
     top: 0;
     left: 0;
     cursor: pointer;
-}
+    text-decoration: none;
+    list-style: none;
 
-.projeto_item:hover {
-    top: -5px;
-    left: 5px;
-    box-shadow: 0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-3),
-        0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-2),
-        0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-5);
 }
+    .projeto_item:hover{
+        transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+        transform: scale(1.05);
+    }
+
 
 .descricao_item {
     margin-top: 1rem;
@@ -266,6 +316,21 @@ span:hover {
     color: #444444;
 }
 
+
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+
+}
+
+.lista__contato {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* ____________________________________________________________________________________________________________ */
 /* ____________________________________________________________________________________________________________ */
 @media (min-width: 768px) {
@@ -275,7 +340,7 @@ span:hover {
         flex-direction: row;
         width: 100vw;
         height: 18vh;
-        top: 0;
+        margin: 0;
         position: fixed;
         justify-content: flex-start;
         align-items: center;
@@ -286,19 +351,23 @@ span:hover {
 
     .material-icons {
         display: none;
-
     }
 
     .titulo__cabecalho {
         display: flex;
-        margin: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5%;
+    }
+
+    .navegador {
+        display: flex;
     }
 
     .lista_cabecalho {
         display: flex;
         flex-direction: row;
         width: 70vw;
-        justify-content: space-between;
+        justify-content: space-around;
         z-index: 0;
     }
 
@@ -310,11 +379,7 @@ span:hover {
         align-items: center;
         justify-content: center;
         margin: 4vw;
-
-    }
-
-    .navegador {
-        display: flex;
+        color: var(--color-0);
     }
 
     .link_nav {
@@ -347,46 +412,54 @@ span:hover {
     }
 
     .main {
-        width: 200vw;
+        width: 100%;
         display: flex;
-        flex-direction: column;
         background-color: var(--color-3);
     }
 
     .container__apresentacao {
         display: flex;
-        width: 100vw;
         flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        /* align-items: center; */
-        margin-top: 20vh;
-
+        width: 100%;
+       margin-top: 5%;
+        font: normal normal 1em 'Protest Strike';
     }
 
-    .text_apresentation {
-        height: 45vh;
-        width:50vw;
-        margin: 0 1%;
-        font-size: 2em;
-        font-family: 'Protest Strike';
-        color: var(--color-0);
-        background-color: var(--background);
+    .container__apresentacao p {
+        width: 28vw;
+        font-size: 2rem;
+      
+    }
+
+    .titulo_apresentacao {
+        display: flex;
+        width: 30vw;
+    }
+
+    .text_apresentacao {
         padding: 0;
+        width: 25vw;
+        margin: 0 5%;
+
+        span {
+            font: normal normal 1em 'Protest Strike';
+            color: var(--color-0);
+            transition: font 3s ease, color 3s ease, transform 3s ease;
+        }
+
+        span:hover {
+            font: normal bolder 2em 'Londrina Sketch';
+            color: var(--color-0);
+            transform: scale(3.05);
+        }
+
     }
-
-
 
     .foto-miriam {
-        width: 30vw;
-        height: auto;
-        margin: 0;
-        background-color: var(--background);
-        width: 300px;
-        min-height: 90px;
+      
         border: 0.7em solid var(--color-1);
         border-radius: 1em;
-        margin: calc(5vh - 30px) auto 0 auto;
+        margin: calc(20vh - 5vw) auto 0 auto;
         box-shadow:
             5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
             10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
@@ -394,11 +467,9 @@ span:hover {
             30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
             40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
         transition: box-shadow 0.7s, top 0.7s, left 0.7s;
-        position: relative;
         top: 0;
         left: 0;
         cursor: pointer;
-        max-width: 60vw;
         transform: translateY(0px);
         animation: float 5s ease-in-out infinite;
     }
@@ -428,66 +499,44 @@ span:hover {
             0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
     }
 
-
-
-
-
-
- 
-
-    .sobre_mim {
+    .sessão_2 {
         display: flex;
-        width: 53vw;
-        height: 60vh;
-        margin: 20vh auto;
+        height: 70vh;
+        justify-content: center;
         align-items: center;
-        font: normal normal 0.9rem "arial";
-        border-radius: 1em;
-        color: var(--color-0);
-        background-image: url("../image/bg_body_resp.png");
-        box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
-            var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
-            var(--color-1) 20px -20px, var(--color-5) 30px -30px 0px -3px,
-            var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
-            var(--color-1) 40px -40px;
+        margin: auto;
     }
 
+
     .titulo_sobre_mim {
-        width: 50vw;
-        text-align: justify;
-        margin: 2vh 2vw;
         color: var(--color-text-white);
     }
 
     .text_sobre_mim {
-        width: 40vw;
-        margin-left: 3vw;
-        color: var(--color-text-white);
+        width: 30vw;
+    color: var(--color-text-white);
+    height: 40vh;
+    margin:0;
     }
 
     .text_sobre_mim p {
-        text-align: justify;
-        width: 40vw;
-        margin-left: 2%;
+           width: 33vw;
+    color: var(--color-text-white);
+    height: 10vh;
+    margin-top: 2vh;
     }
 
     .contato {
-        margin-top: 10vh;
-        height: 60vh;
-        width: 100vw;
+        width: 5vw;
+        margin-left: 10%;
         color: var(--color-4);
-        display: flex;
-        flex-wrap: wrap;
+
     }
 
     .contato ul {
-        display: flex;
-        flex-direction: column;
-        width: 30vw;
-
-        margin-left: 2%;
+        width: 50vw;
         gap: 10px;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .contato__icon {
@@ -509,6 +558,29 @@ span:hover {
         gap: 40px;
     }
 
+    .projeto_item {
+        flex-grow: 1;
+        border-radius: 1em;
+        background-color: var(--color-1);
+        width: 25vw;
+        min-height: 80px;
+        border: 3px solid var(--color-2);
+        padding: 15px;
+        box-shadow:
+            var(--color-5) 0px 0px 0px 2px inset,
+            var(--color-5) 10px -10px 0px -3px,
+            var(--color-1) 10px -10px,
+            var(--color-5) 20px -20px 0px -3px;
+        position: relative;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+    }
+
+  
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -516,4 +588,3 @@ span:hover {
         width: 100vw;
         align-items: center;
     }
-}
