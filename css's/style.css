@@ -38,35 +38,32 @@ body {
 
 .container_cabecalho {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     width: 100vw;
+    height: 15vh;
     top: 0px;
     margin: 0;
-    background-color: var(--fumê);
     align-items: center;
-    /* justify-content: space-between; */
     z-index: 2;
 }
 
 .titulo__cabecalho {
-    width: 100vw;
+    width: 30vw;
     height: auto;
-    padding: 0;
+    padding: 3;
     font-size: 1.5rem;
     font: normal bolder 1em 'Zilla Slab';
     text-align: center;
     margin: 0;
-    color: var(--color-text-claro);
+    color: var(--color-0);
 }
 
-.navegador {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
+mark{
+    background-color: chartreuse;
 }
+
 
 .material-icons {
     display: flex;
@@ -74,24 +71,30 @@ body {
     font-family: 'Material Icons';
     justify-content: center;
     align-items: center;
-    background-color: var(--color-1);
+    background-color: var(--span);
     cursor: pointer;
     border-radius: 0.3em;
     border: 0.5px solid #444444c5;
     margin-bottom: 3%;
 }
 
-.material-icons:hover{
-    width: 10vw;
-}
 
-.lista_nav {
+.navegador {
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 50vw;
+    height: 15vh;
     justify-content: center;
     align-items: center;
-    background-color: #A0A676;
+}
+
+.lista_cabecalho {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 0vh;
+    align-items: center;
+  
 }
 
 .nav_item {
@@ -113,14 +116,11 @@ body {
 .link_nav {
     display: flex;
     font-size: 1em;
-  
     width: 50vw;
     align-items: center;
     justify-content: center;
-  
     text-decoration: none;
     list-style: none;
- 
     padding: 1%;
 
 }
