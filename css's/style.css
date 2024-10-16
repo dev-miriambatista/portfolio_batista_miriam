@@ -16,6 +16,7 @@
     --color-text-claro: #c2acac;
     --span: #ff3769;
     --transparente: #ff376900;
+    --fumê: #3a3838d7;
 }
 
 *,
@@ -26,6 +27,229 @@
     padding: 0;
 }
 
+html,
+body {
+    width: 100%;
+    display: flex;
+    background-image: url("../image/bg_body_resp.png");
+    flex-direction: column;
+    color: var(--color-0);
+}
+
+.container_cabecalho {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    margin: 0;
+    background-color: var(--fumê);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.titulo__cabecalho {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    font-size: 1.5rem;
+    font: normal bolder 1em 'Zilla Slab';
+    text-align: center;
+    margin: 0;
+    color: var(--color-text-claro);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+}
+
+.material-icons {
+    display: flex;
+    width: 7vw;
+    font-family: 'Material Icons';
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+    border: 0.5px solid #444444;
+    margin-bottom: 15%;
+}
+
+.material-icons:hover{
+    width: 10vw;
+}
+
+.lista_nav {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #A0A676;
+}
+
+.nav_item {
+    display: flex;
+    color: var(--color-1);
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink,
+.yellow,
+.orange,
+.green {
+    display: flex;
+    width: 30vw;
+}
+
+.link_nav {
+    display: flex;
+    font-size: 1em;
+  
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  
+    text-decoration: none;
+    list-style: none;
+ 
+    padding: 1%;
+
+}
+
+.container__apresentacao {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.text_apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font: normal normal 1.2em 'Protest Strike';
+    width: 90vw;
+    height: auto;
+    padding: 3%;
+    margin-bottom: 10vh;
+}
+
+span {
+    font: normal normal 1em 'Protest Strike';
+    color: var(--color-0);
+    transition: font 1s ease, color 1s ease, transform 1s ease;
+}
+
+span:hover {
+    font: normal bolder 1.2em 'Londrina Sketch';
+    color: var(--color-0);
+    transform: scale(1.05);
+}
+
+.contato__icon {
+    display: flex;
+    font-size: 4rem;
+    padding: 2px;
+    color: var(--color-5);
+    border-radius: 50%;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista__contato {
+    text-decoration: none;
+    list-style: none;
+}
+
+.contato__icon {
+    display: flex;
+
+}
+
+.foto-miriam {
+
+    background-color: var(--background);
+    min-height: 90px;
+    border: 0.7em solid var(--color-1);
+    border-radius: 1em;
+    margin: calc(10vh - 10px) auto 0 auto;
+    box-shadow:
+        5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
+        10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
+        20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
+        30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
+        40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
+    transition: box-shadow 0.7s, top 0.7s, left 0.7s;
+    cursor: pointer;
+}
+
+.foto-miriam:hover {
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-1),
+        0 0 0 -3px var(--color-2), 0 0 0 0 var(--color-2),
+        0 0 0 -3px var(--color-3), 0 0 0 0 var(--color-3),
+        0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
+}
+
+.sessão_2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: var(--color-3);
+}
+
+.sobre_mim {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 80%;
+    margin: auto;
+    padding: 3%;
+    align-items: start;
+    font: normal normal 0.9rem "arial";
+    border-radius: 1em;
+    color: var(--color-0);
+    background-image: url("../image/bg_body_resp.png");
+    box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
+        var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
+        var(--color-1) 20px -20px, var(--color-5) 30px -30px 0px -3px,
+        var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
+        var(--color-1) 40px -40px;
+}
+
+.titulo_sobre_mim {
+    width: 50vw;
+    text-align: justify;
+    margin: 2vh auto;
+    color: var(--color-text-white);
+}
+
+.text_sobre_mim {
+    flex-direction: column;
+    text-align: justify;
+    width: 90vw;
+    margin: 10%
+}
+
+.sobre_mim p{
+    margin: 1% 3%
+}
 
 /* ______________________________sessão projetos__________________________ */
 
@@ -141,7 +365,7 @@
 
     .titulo__cabecalho {
         display: flex;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Zilla Slab';
         margin-left: 5%;
     }
 
@@ -179,7 +403,7 @@
     .yellow,
     .orange,
     .green {
-        width: 150px;
+        width: 8em;
         height: auto;
     }
 
@@ -290,22 +514,21 @@
 
     .titulo_sobre_mim {
         color: var(--color-text-white);
-        margin: 0;
     }
 
     .text_sobre_mim {
         width: 30vw;
     color: var(--color-text-white);
-    height: 60vh;
-    margin:0;
+    height: 40vh;
+    margin:auto;
     }
 
     .text_sobre_mim p {
-           width: 62vw;
+           width: 50vw;
     color: var(--color-text-white);
-    height: auto;
-    margin-top: 1vh;
-    font: normal normal 1.2em 'arial'
+    height: 10vh;
+    margin-top: 1vh auto;
+    font: normal normal 1em 'arial'
     }
 
     .contato {
@@ -332,11 +555,15 @@
         justify-content: center;
     }
 
+    .sessao_3{
+        margin: 5% 0;
+    }
+
     .container_projetos {
         display: flex;
         width: 90vw;
         flex-wrap: wrap;
-        margin: 2vw;
+        margin: 5% auto;
         gap: 40px;
     }
 
