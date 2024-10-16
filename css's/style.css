@@ -15,6 +15,7 @@
     --color-0: #615656;
     --color-text-claro: #c2acac;
     --span: #ff3769;
+    --transparente: #ff376900;
 }
 
 *,
@@ -25,221 +26,6 @@
     padding: 0;
 }
 
-html,
-body {
-    width: 100%;
-    display: flex;
-    background-image: url("../image/bg_body_resp.png");
-    flex-direction: column;
-    color: var(--color-0);
-}
-
-.container_cabecalho {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100vw;
-    top: 0px;
-    margin: 0;
-    background-color: var(--color-2);
-    align-items: center;
-    align-items: flex-end;
-    justify-content: space-between;
-    background-color: var(--color-2);
-    z-index: 2;
-
-}
-
-.titulo__cabecalho {
-    width: 100vw;
-    font-size: 1.5rem;
-    font: normal normal 1em 'Convergence';
-    text-align: center;
-    margin: 0;
-    color: #444444;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-
-.material-icons {
-    display: flex;
-    width: 100vw;
-    font-family: 'Material Icons';
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-2);
-    border: none;
-    cursor: pointer;
-}
-
-.lista_nav {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    background-color: #A0A676;
-}
-
-.nav_item {
-    display: flex;
-    color: var(--color-1);
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.pink,
-.yellow,
-.orange,
-.green {
-    display: none;
-}
-
-.link_nav {
-    display: flex;
-    font-size: 1em;
-    color: var(--color-text-claro);
-    width: 50vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #615656;
-    text-decoration: none;
-    list-style: none;
-    border: 1px solid var(--color-text-claro);
-    padding: 1%;
-    border-radius: 0.5em;
-}
-
-.container__apresentacao {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-}
-
-.text_apresentacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font: normal normal 1.2em 'Protest Strike';
-    width: 90vw;
-    height: auto;
-    padding: 3%;
-    margin-bottom: 10vh;
-}
-
-span {
-    font: normal normal 1em 'Protest Strike';
-    color: var(--color-0);
-    transition: font 1s ease, color 1s ease, transform 1s ease;
-}
-
-span:hover {
-    font: normal bolder 1.2em 'Londrina Sketch';
-    color: var(--color-0);
-    transform: scale(1.05);
-}
-
-.contato__icon {
-    display: flex;
-    font-size: 4rem;
-    padding: 2px;
-    color: var(--color-5);
-    border-radius: 50%;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista__contato {
-    text-decoration: none;
-    list-style: none;
-}
-
-.contato__icon {
-    display: flex;
-
-}
-
-.foto-miriam {
-
-    background-color: var(--background);
-    min-height: 90px;
-    border: 0.7em solid var(--color-1);
-    border-radius: 1em;
-    margin: calc(10vh - 10px) auto 0 auto;
-    box-shadow:
-        5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
-        10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
-        20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
-        30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
-        40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
-    transition: box-shadow 0.7s, top 0.7s, left 0.7s;
-    cursor: pointer;
-}
-
-.foto-miriam:hover {
-    top: -40px;
-    left: 40px;
-    box-shadow: 0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-1),
-        0 0 0 -3px var(--color-2), 0 0 0 0 var(--color-2),
-        0 0 0 -3px var(--color-3), 0 0 0 0 var(--color-3),
-        0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
-}
-
-.sessão_2 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    background-color: var(--color-3);
-}
-
-.sobre_mim {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    height: 80%;
-    margin: auto;
-    padding: 3%;
-    align-items: center;
-    font: normal normal 0.9rem "arial";
-    border-radius: 1em;
-    color: var(--color-0);
-    background-image: url("../image/bg_body_resp.png");
-    box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
-        var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
-        var(--color-1) 20px -20px, var(--color-5) 30px -30px 0px -3px,
-        var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
-        var(--color-1) 40px -40px;
-}
-
-.titulo_sobre_mim {
-    width: 50vw;
-    text-align: justify;
-    margin: 2vh auto;
-    color: var(--color-text-white);
-}
-
-.text_sobre_mim {
-    flex-direction: column;
-    text-align: justify;
-    width: 90vw;
-    margin: 10%
-}
-
-.sobre_mim p{
-    margin: 1% 3%
-}
 
 /* ______________________________sessão projetos__________________________ */
 
@@ -345,7 +131,7 @@ span:hover {
         justify-content: flex-start;
         align-items: center;
         z-index: 2000;
-        background-image: linear-gradient(to left, var(--color-1), var(--color-2), var(--color-3), var(--color-4), var(--color-5));
+        background-color: #4b3046;
         color: var(--color-1);
     }
 
@@ -387,7 +173,6 @@ span:hover {
         width: 7vw;
         margin: 0px;
         padding: 5%;
-        box-shadow: 2% #9DE4CE;
     }
 
     .pink,
@@ -402,13 +187,8 @@ span:hover {
     .yellow:hover,
     .orange:hover,
     .green:hover {
-        box-shadow: 1px 1px var(--color-4),
-            2px 2px var(--color-4),
-            3px 3px var(--color-4),
-            4px 4px var(--color-4),
-            5px 5px var(--color-4),
-            6px 6px var(--color-4),
-            2px 2px var(--color-4);
+        transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+        transform: scale(1.2);
     }
 
     .main {
@@ -444,13 +224,13 @@ span:hover {
         span {
             font: normal normal 1em 'Protest Strike';
             color: var(--color-0);
-            transition: font 3s ease, color 3s ease, transform 3s ease;
+            transition: font 1s ease, color 1s ease, transform 1s ease;
         }
 
         span:hover {
             font: normal bolder 2em 'Londrina Sketch';
             color: var(--color-0);
-            transform: scale(3.05);
+            transform: scale(1.05);
         }
 
     }
@@ -510,20 +290,22 @@ span:hover {
 
     .titulo_sobre_mim {
         color: var(--color-text-white);
+        margin: 0;
     }
 
     .text_sobre_mim {
         width: 30vw;
     color: var(--color-text-white);
-    height: 40vh;
+    height: 60vh;
     margin:0;
     }
 
     .text_sobre_mim p {
-           width: 33vw;
+           width: 62vw;
     color: var(--color-text-white);
-    height: 10vh;
-    margin-top: 2vh;
+    height: auto;
+    margin-top: 1vh;
+    font: normal normal 1.2em 'arial'
     }
 
     .contato {
