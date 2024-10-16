@@ -38,14 +38,14 @@ body {
 
 .container_cabecalho {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
     width: 100vw;
     top: 0px;
     margin: 0;
     background-color: var(--fumê);
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     z-index: 2;
 }
 
@@ -60,11 +60,12 @@ body {
     color: var(--color-text-claro);
 }
 
-.nav {
+.navegador {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 50vw;
     justify-content: center;
+    align-items: center;
 }
 
 .material-icons {
@@ -74,11 +75,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--color-1);
-    border: none;
     cursor: pointer;
     border-radius: 0.3em;
-    border: 0.5px solid #444444;
-    margin-bottom: 15%;
+    border: 0.5px solid #444444c5;
+    margin-bottom: 3%;
 }
 
 .material-icons:hover{
@@ -597,3 +597,4 @@ span:hover {
         width: 100vw;
         align-items: center;
     }
+}

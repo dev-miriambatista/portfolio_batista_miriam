@@ -16,7 +16,7 @@
             <h1>Portfólio</h1>
         </div>
 
-        <nav>
+        <nav class="navegador">
             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
             <div id="menu">
 
@@ -44,7 +44,6 @@
                 </ul>
         </nav>
 
-        </div>
     </header>
 
     <main>
@@ -210,7 +209,7 @@
             } else {
                 menu.style.display = 'flex'; // Exibe o menu ao clicar se estiver oculto
             }
-        }
+        }    
 
         window.onload = () => {
             mudouTamanho(); // Chama a função quando a página carrega para ajustar a visibilidade
