@@ -36,14 +36,16 @@ body {
     color: var(--color-0);
 }
 
+
+
 .container_cabecalho {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
     align-items: center;
     position: fixed;
     width: 100vw;
-    height: 12vh;
+    height: 9vh;
     top: 0;
     margin: 0;
     z-index: 2;
@@ -57,12 +59,12 @@ body {
 }
 
 .titulo__cabecalho {
-    width: 30vw;
+    width: 50vw;
     height: auto;
     padding: 1.5;
     font-size: 1.5rem;
     font: normal bolder 2em 'Zilla Slab';
-    text-align: center;
+    text-align: left;
     margin: 0;
     color: var(--color-0);
 }
@@ -79,12 +81,13 @@ body {
     border-radius: 0.3em;
     border: 0.5px solid #444444c5;
     margin-bottom: 1.5%;
+    text-align: right;
 }
 
 .navegador {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 20vw;
     height: 15vh;
     justify-content: center;
     align-items: center;
@@ -102,10 +105,11 @@ body {
 .nav_item {
     display: flex;
     color: var(--color-1);
-    width: 100vw;
+    width: 50vw;
     align-items: center;
     justify-content: center;
     background-image: url("../image/bg_body_resp.png");
+    border-radius: 0.5em;
 }
 
 .pink,
@@ -113,8 +117,7 @@ body {
 .orange,
 .green {
     display: flex;
-    width: 30vw;
-
+    width: 25vw;
 }
 
 .link_nav {
@@ -122,10 +125,9 @@ body {
     font-size: 1em;
     width: 50vw;
     align-items: center;
-    justify-content: center;
     text-decoration: none;
     list-style: none;
-    padding: 1%;
+    padding: 2%;
 
 }
 
@@ -271,26 +273,37 @@ body {
         var(--color-1) 40px -40px;
 }
 
+.img_sobre_mim{
+float: left;
+margin: 2%;
+border-radius: 0.5em;
+}
+
 .titulo_sobre_mim {
     width: 50vw;
-    text-align: justify;
     margin: 2vh auto;
     color: var(--color-text-white);
     font: normal normal 2em 'Zilla Slab';
 }
 
 .text_sobre_mim {
-    flex-direction: column;
+    display: block;
     text-align: justify;
     width: 90vw;
-    margin: 10%
 }
 
 .sobre_mim p {
-    margin: 1% 3%
+    margin: 1% 3%;
+    text-align: justify;
 }
 
 /* ______________________________sessão projetos__________________________ */
+.sessao_3{
+    background-color: var(--color-2);
+    width: 100%;
+    margin: auto;
+}
+
 
 .container_projetos {
     display: flex;
@@ -304,6 +317,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .container_projetos h1 {
@@ -340,16 +354,12 @@ body {
 }
 
 .titulo_card {
-    font: normal normal 1.2em 'Zilla Slab';
-}
-
-
-.titulo_card {
     position: relative;
     font-size: 2rem;
     font-weight: 700;
     transition: .4s ease-out;
     color: #444444;
+    font: normal normal 1.2em 'Zilla Slab';
 }
 
 .descricao_projeto img {
@@ -374,12 +384,9 @@ body {
 
 
 form {
-    width: 100vw;
-    margin: auto;
-
-    border: 2px solid var(--color-0);
-    background-color: var(--color-2);
-    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
     min-height: 90px;
     border: 0.7em solid var(--color-1);
     border-radius: 1em;
@@ -392,19 +399,21 @@ form {
         40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
     transition: box-shadow 0.7s, top 0.7s, left 0.7s;
     cursor: pointer;
-
-
-
 }
 
 label {
     font: normal normal 1em 'arial';
     display: inline-block;
     width: 16vw;
-
 }
 
 input {
+    width: 65vw;
+    height: 4vh;
+    margin: 2% auto
+}
+
+textarea{
     width: 65vw;
     height: 4vh;
     margin: 2% auto
@@ -415,13 +424,36 @@ input {
     justify-content: center;
     align-items: center;
     margin-top: 8%;
+}
 
+.titulo_contato{
+    font: normal normal 2em 'Zilla Slab';
 }
 
 .lista__contato {
     display: flex;
     justify-content: space-around;
 }
+
+button {
+    width: 7vw;
+    background-color: #A0A676; 
+    color: white; 
+    padding: 0.5vh 1vw;
+    border: 0.3vw solid #A0A676;
+    border-radius: 0.5em; 
+    cursor: pointer;
+    font-size: 1.5vw; 
+    box-shadow: 0 0.6vh 0.9vh #00000033;
+    transition: all 0.3s ease;
+    text-align: right;
+    margin: auto;
+  }
+  
+  button:hover {
+    background-color: #A0A676;
+    box-shadow: 0 0.9vh 1.2vh #0000004d;
+  }
 
 /* ____________________________________________________________________________________________________________ */
 /* ____________________________________________________________________________________________________________ */
@@ -502,6 +534,15 @@ input {
         width: 100%;
         display: flex;
         background-color: var(--color-3);
+    }
+
+    .img_container{
+        width: 25%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
     }
 
     .container__apresentacao {
@@ -685,7 +726,7 @@ input {
         margin: 1%;
     }
 
-    . .links_card {
+    .links_card {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -743,6 +784,10 @@ input {
         width: calc(98.5%);
         margin-bottom: 2vw;
     }
+
+      
+      
+
 
 
 
