@@ -8,10 +8,10 @@
 
 :root {
     --color-1: #9DE4CE;
-    --color-2: #9cfd93;
+    --color-2: #3a38387c;
     --color-3: #F2EB8D;
     --color-4: #F2B199;
-    --color-5: #F28A80;
+    --color-5: #b87aff;
     --color-0: #615656;
     --color-text-claro: #c2acac;
     --span: #ff3769;
@@ -34,6 +34,7 @@ body {
     background-image: url("../image/bg_body_resp.png");
     flex-direction: column;
     color: var(--color-0);
+    overflow-x: hidden;
 }
 
 
@@ -44,7 +45,7 @@ body {
     justify-content:space-between;
     align-items: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 9vh;
     top: 0;
     margin: 0;
@@ -220,7 +221,7 @@ body {
 }
 
 .foto-miriam {
-
+width: 80%;
     background-color: var(--background);
     min-height: 90px;
     border: 0.7em solid var(--color-1);
@@ -252,19 +253,21 @@ body {
     align-items: center;
     background-color: var(--color-3);
     margin: 10vh auto;
+    padding: 7%;
 }
 
-.sobre_mim {
+.container_sobre_mim {
     display: flex;
-    flex-direction: column;
     width: 70vw;
     height: auto;
     margin: auto;
     padding: 1%;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
     font: normal normal 0.9rem "arial";
     border-radius: 1em;
     color: var(--color-0);
+    flex-direction: column;
     background-image: url("../image/bg_body_resp.png");
     box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
         var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
@@ -302,6 +305,7 @@ border-radius: 0.5em;
     background-color: var(--color-2);
     width: 100%;
     margin: auto;
+    padding:1%;
 }
 
 
@@ -311,6 +315,7 @@ border-radius: 0.5em;
     flex-wrap: wrap;
     margin: 15% auto;
     gap: 100px;
+    
 }
 
 .sessao_3 h1 {
@@ -354,16 +359,19 @@ border-radius: 0.5em;
     background-color: var(--color-5);
 }
 
-.titulo_card {
-    position: relative;
-    font-size: 2rem;
-    font-weight: 700;
-    transition: .4s ease-out;
-    color: #444444;
-    font: normal normal 1.2em 'Zilla Slab';
+.img_container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    text-align: center;
 }
 
-.descricao_projeto img {
+.img_projeto {
+    float: left;
+    margin: 1%;
     grid-area: 1/ 1/ 3/ 2;
 }
 
@@ -421,23 +429,30 @@ form {
     cursor: pointer;
 }
 
+.form_item{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
 label {
     font: normal normal 1em 'arial';
-    display: inline-block;
+    display: flex;
     width: 16vw;
 }
 
 input {
-    width: 65vw;
+    width: 50vw;
     height: 4vh;
     margin: 2% auto
 }
 
 textarea{
-    width: 65vw;
-    height: 4vh;
+    width: 50vw;
+    height: 10vh;
     margin: 2% auto
 }
+
 
 .contato {
     display: flex;
@@ -482,11 +497,11 @@ button {
     .container_cabecalho {
         display: flex;
         flex-direction: row;
-        width: 100vw;
+        width: 100%;
         height: 18vh;
         margin: 0;
         position: fixed;
-        justify-content: flex-start;
+    
         align-items: center;
         z-index: 2000;
         background-color: #4b3046;
@@ -563,6 +578,7 @@ button {
         justify-content: center;
         align-items: center;
         margin-top: 5vh;
+        text-align: center;
     }
 
     .container__apresentacao {
@@ -653,7 +669,7 @@ button {
 
     .sessão_2 {
         display: flex;
-        height: 70vh;
+        height: 90vh;
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -788,6 +804,15 @@ button {
 
     }
 
+    .form_item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
     label {
         display: inline-block;
         width: 100px;
@@ -799,7 +824,7 @@ button {
     }
 
     textarea {
-        width: calc(98.5%);
+        width: calc(86%);
         margin-bottom: 2vw;
     }
 
