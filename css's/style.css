@@ -17,7 +17,7 @@
     --span: #ff3769;
     --transparente: #ff376900;
     --fumê: #b972fc1a;
-    --black: #0000007c;
+    --black: #000000;
 }
 
 *,
@@ -433,6 +433,7 @@ body {
     background-color: var(--color-5);
     text-align: center;
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 .link_card:hover {
@@ -508,13 +509,13 @@ textarea {
 }
 
 button {
-    width: 13vw;
-    background-color: var(--span);
+    width: 17vw;
+    background-color: var(--color-0);
     color: var(--black);
     padding: 0.5vh 1vw;
     border-radius: 0.5em;
     cursor: pointer;
-    font-size: 3.5vw;
+    font:normal normal 1.2em 'cambria';
     box-shadow: 0 0.6vh 0.9vh #00000033;
     transition: all 0.3s ease;
     margin: 2vh auto;
@@ -526,6 +527,18 @@ button {
 button:hover {
     background-color: #A0A676;
     box-shadow: 0 0.9vh 1.2vh #0000004d;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    background-color: var(--black);
+    justify-content: center;
+    color: var(--color-1);
 }
 
 /* ____________________________________________________________________________________________________________ */
@@ -839,6 +852,7 @@ button:hover {
         background-color: var(--color-5);
         text-align: center;
         text-decoration: none;
+        font-size: 1em;
     }
 
     .link_card:hover {
@@ -906,8 +920,20 @@ textarea {
 
 .footer {
     display: flex;
-    flex-direction: column;
-    margin-top: 20vh;
-    width: 100vw;
     align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 10vh;
+   
+    background-color: var(--black);
+}
+
+footer p{
+    display: flex;
+    font: normal normal 1em 'arial';
+    justify-content: center;
+
+
+    
 }
