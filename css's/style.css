@@ -17,6 +17,7 @@
     --span: #ff3769;
     --transparente: #ff376900;
     --fumê: #b972fc1a;
+    --black: #0000007c;
 }
 
 *,
@@ -42,7 +43,7 @@ body {
 .container_cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -118,7 +119,8 @@ body {
 .orange,
 .green {
     display: flex;
-    width: 25vw;
+    width: 32vw;
+    height: 8vh;
 }
 
 .link_nav {
@@ -144,7 +146,7 @@ body {
 
 .text_apresentacao {
     display: flex;
-    position: relative; 
+    position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -156,33 +158,52 @@ body {
 }
 
 .obs {
-    position: relative; /* Necessário para o posicionamento do tooltip dentro do span */
-    display: inline-block; /* Para que o tooltip apareça corretamente */
-    cursor: pointer; /* Para indicar que é interativo */
+    position: relative;
+    /* Necessário para o posicionamento do tooltip dentro do span */
+    display: inline-block;
+    /* Para que o tooltip apareça corretamente */
+    cursor: pointer;
+    /* Para indicar que é interativo */
 }
 
 .tooltip-text {
-    visibility: hidden; /* Oculta o tooltip por padrão */
-    width: 20vw; /* Largura do tooltip */
-    background-color: #333333b7; /* Cor de fundo */
-    color: var(--color-1); /* Cor do texto */
-    text-shadow: 1px 1px 1px var(--span) ;
-    text-align: center; /* Centraliza o texto */
-    border-radius: 1em; /* Bordas arredondadas */
-    padding: 8px; /* Espaçamento interno */
-    position: absolute; /* Posiciona o tooltip em relação ao pai */
-    z-index: 1; /* Garante que o tooltip fique acima de outros elementos */
-    bottom: 50%; /* Posiciona o tooltip acima do texto */
-    left: 200%; /* Centraliza o tooltip */
-    transform: translateX(-30%); /* Alinha o tooltip ao centro */
-    opacity: 0; /* Oculta o tooltip */
-    transition: opacity 0.3s; /* Efeito de transição */
-  
+    visibility: hidden;
+    /* Oculta o tooltip por padrão */
+    width: 20vw;
+    /* Largura do tooltip */
+    background-color: #333333b7;
+    /* Cor de fundo */
+    color: var(--color-1);
+    /* Cor do texto */
+    text-shadow: 1px 1px 1px var(--span);
+    text-align: center;
+    /* Centraliza o texto */
+    border-radius: 1em;
+    /* Bordas arredondadas */
+    padding: 8px;
+    /* Espaçamento interno */
+    position: absolute;
+    /* Posiciona o tooltip em relação ao pai */
+    z-index: 1;
+    /* Garante que o tooltip fique acima de outros elementos */
+    bottom: 50%;
+    /* Posiciona o tooltip acima do texto */
+    left: 200%;
+    /* Centraliza o tooltip */
+    transform: translateX(-30%);
+    /* Alinha o tooltip ao centro */
+    opacity: 0;
+    /* Oculta o tooltip */
+    transition: opacity 0.3s;
+    /* Efeito de transição */
+
 }
 
 .obs:hover .tooltip-text {
-    visibility: visible; /* Torna visível ao passar o mouse */
-    opacity: 1; /* Apresenta com opacidade */
+    visibility: visible;
+    /* Torna visível ao passar o mouse */
+    opacity: 1;
+    /* Apresenta com opacidade */
     font: normal normal 0.5em 'arial';
 }
 
@@ -221,7 +242,7 @@ body {
 }
 
 .foto-miriam {
-width: 80%;
+    width: 80%;
     background-color: var(--background);
     min-height: 90px;
     border: 0.7em solid var(--color-1);
@@ -235,6 +256,12 @@ width: 80%;
         40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
     transition: box-shadow 0.7s, top 0.7s, left 0.7s;
     cursor: pointer;
+    transition: box-shadow 0.7s, top 0.7s, left 0.7s;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
 }
 
 .foto-miriam:hover {
@@ -246,22 +273,22 @@ width: 80%;
         0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
 }
 
-.sessão_2 {
+.sessao_2 {
     display: flex;
     width: 100%;
     height: auto;
     align-items: center;
-    background-color: var(--color-3);
     margin: 10vh auto;
     padding: 7%;
 }
 
 .container_sobre_mim {
     display: flex;
-    width: 70vw;
+    width: 78vw;
     height: auto;
-    margin: auto;
-    padding: 1%;
+    margin: auto 7vw;
+    padding: 5%;
+    text-align: justify;
     align-items: center;
     justify-content: center;
     font: normal normal 0.9rem "arial";
@@ -276,10 +303,10 @@ width: 80%;
         var(--color-1) 40px -40px;
 }
 
-.img_sobre_mim{
-float: left;
-margin: 2%;
-border-radius: 0.5em;
+.img_sobre_mim {
+    float: left;
+    margin: 2%;
+    border-radius: 0.5em;
 }
 
 .titulo_sobre_mim {
@@ -301,11 +328,10 @@ border-radius: 0.5em;
 }
 
 /* ______________________________sessão projetos__________________________ */
-.sessao_3{
-    background-color: var(--color-2);
+.sessao_3 {
     width: 100%;
     margin: auto;
-    padding:1%;
+    padding: 1%;
 }
 
 
@@ -315,14 +341,14 @@ border-radius: 0.5em;
     flex-wrap: wrap;
     margin: 15% auto;
     gap: 100px;
-    
+
 }
 
 .sessao_3 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .container_projetos h1 {
@@ -356,7 +382,7 @@ border-radius: 0.5em;
 .projeto_item:hover {
     transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
     transform: scale(1.02);
-    background-color: var(--color-5);
+    background-image: url(../image/bg_body.png);
 }
 
 .img_container {
@@ -365,9 +391,14 @@ border-radius: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin: 5vh auto;
     text-align: center;
 }
+
+.titulo_card{
+    font: normal bolder 2em 'cambria';
+}
+
 
 .img_projeto {
     float: left;
@@ -387,27 +418,26 @@ border-radius: 0.5em;
 .links_card {
     display: flex;
     justify-content: space-around;
-    margin-top: 3%;
-    justify-content: space-around;
+    margin-top: 6%;
     align-items: center;
+    font: normal bolder 1.5em 'cambria';
+
 }
 
 
 .link_card {
     border-radius: 0.5em;
     padding: 2%;
-    width: 15vw;
-    color: var(--color-0);
-    font: normal border 1em 'arial';
-    background-color: var(--color-3);
+    width: 22vw;
+    color: var(--black);
+    background-color: var(--color-5);
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--color-0)
 }
 
 .link_card:hover {
-    background-color:var(--color-1);
-    color: var(--color-0);
+    background-color: var(--color-0);
+    color: var(--black);
     border-radius: 2em;
 }
 
@@ -418,7 +448,7 @@ form {
     min-height: 90px;
     border: 0.7em solid var(--color-1);
     border-radius: 1em;
-    margin: calc(10vh - 10px) auto 0 auto;
+    margin: calc(10vh - 10px) 60px 0 auto;
     box-shadow:
         5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
         10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
@@ -429,7 +459,7 @@ form {
     cursor: pointer;
 }
 
-.form_item{
+.form_item {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -444,13 +474,20 @@ label {
 input {
     width: 50vw;
     height: 4vh;
-    margin: 2% auto
+    margin: 2% auto;
+    background-color: var(--color-text-claro);
+    border-radius: 0.5em;
+    border: none;
+
 }
 
-textarea{
+textarea {
     width: 50vw;
     height: 10vh;
-    margin: 2% auto
+    margin: 2% auto;
+    background-color: var(--color-text-claro);
+    border-radius: 0.5em;
+    border: none;
 }
 
 
@@ -461,7 +498,7 @@ textarea{
     margin-top: 8%;
 }
 
-.titulo_contato{
+.titulo_contato {
     font: normal normal 2em 'Zilla Slab';
 }
 
@@ -471,24 +508,25 @@ textarea{
 }
 
 button {
-    width: 7vw;
-    background-color: #A0A676; 
-    color: white; 
+    width: 13vw;
+    background-color: var(--span);
+    color: var(--black);
     padding: 0.5vh 1vw;
-    border: 0.3vw solid #A0A676;
-    border-radius: 0.5em; 
+    border-radius: 0.5em;
     cursor: pointer;
-    font-size: 1.5vw; 
+    font-size: 3.5vw;
     box-shadow: 0 0.6vh 0.9vh #00000033;
     transition: all 0.3s ease;
-    text-align: right;
-    margin: auto;
-  }
-  
-  button:hover {
+    margin: 2vh auto;
+    border: none;
+    text-align: center;
+    height: 6vh;
+}
+
+button:hover {
     background-color: #A0A676;
     box-shadow: 0 0.9vh 1.2vh #0000004d;
-  }
+}
 
 /* ____________________________________________________________________________________________________________ */
 /* ____________________________________________________________________________________________________________ */
@@ -501,12 +539,11 @@ button {
         height: 18vh;
         margin: 0;
         position: fixed;
-    
         align-items: center;
         z-index: 2000;
         background-color: #4b3046;
         color: var(--color-1);
-
+        justify-content: flex-start;
     }
 
     .material-icons {
@@ -571,13 +608,13 @@ button {
         background-color: var(--color-3);
     }
 
-    .img_container{
+    .img_container {
         width: 25%;
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh;
+       
         text-align: center;
     }
 
@@ -667,12 +704,33 @@ button {
             0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
     }
 
-    .sessão_2 {
+    .sessao_2 {
         display: flex;
         height: 90vh;
         justify-content: center;
         align-items: center;
         margin: auto;
+    }
+
+    .container_sobre_mim {
+        display: flex;
+        width: 75vw;
+        height: 55vh;
+        margin: auto;
+        padding: 5%;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        font: normal normal 0.9rem "arial";
+        border-radius: 1em;
+        color: var(--color-0);
+        flex-direction: column;
+        background-image: url("../image/bg_body_resp.png");
+        box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px,
+            var(--color-1) 10px -10px, var(--color-5) 20px -20px 0px -3px,
+            var(--color-1) 20px -20px, var(--color-5) 30px -30px 0px -3px,
+            var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
+            var(--color-1) 40px -40px;
     }
 
 
@@ -762,35 +820,39 @@ button {
         margin: 1%;
     }
 
+    .titulo_card_item{
+        font: normal bolder 1em 'cambria';
+    }
+
     .links_card {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        font: normal normal 1em 'cambria';
     }
 
     .link_card {
         border-radius: 0.5em;
         padding: 2%;
-        width: 5vw;
-        color: var(--color-0);
-        font: normal border 1em 'arial';
-        background-color: var(--color-3);
+        width: 10vw;
+        color: var(--color-3);
+        background-color: var(--color-5);
         text-align: center;
         text-decoration: none;
     }
 
     .link_card:hover {
-        background-color:var(--span);
-        color: var(--color-4);
+        background-color: var(--color-0);
+        color: var(--color-text-claro);
         border-radius: 2em;
+        font-weight: bolder;
     }
 
     form {
         width: 80vw;
         margin: auto;
         margin-top: 25vh;
-        padding: 20px;
-        border: 0.7em solid var(--color-1);
+        padding: 5vh auto;
         background-color: var(--background);
         border-radius: 1em;
         box-shadow:
@@ -804,7 +866,7 @@ button {
 
     }
 
-    .form_item{
+    .form_item {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -820,28 +882,32 @@ button {
 
     input {
         width: calc(100% - 120px);
-        margin-bottom: 10px;
+        margin-bottom: 2px;
+        background-color: var(--color-text-claro);
     }
+}
 
-    textarea {
-        width: calc(86%);
-        margin-bottom: 2vw;
-    }
-
-      
-      
-
-
+textarea {
+    margin-bottom: 2vw;
+    background-color: var(--color-text-claro);
+    border-radius: 0.5em;
+    border: none;
+}
 
 
 
 
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-        width: 100vw;
-        align-items: center;
-    }
+
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+    width: 100vw;
+    align-items: center;
 }
