@@ -256,11 +256,16 @@ body {
 }
 
 .container_skills {
+    width: 100%;
+    margin: 5% auto;
+    padding: 1%;
+        
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 78vw;
-    margin: 10% auto;
+
+   
     font: normal normal 0.9rem "arial";
     border-radius: 1em;
     color: var(--color-0);
