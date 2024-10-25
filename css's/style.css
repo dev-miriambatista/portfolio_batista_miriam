@@ -38,8 +38,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .container_cabecalho {
     display: flex;
     flex-direction: row;
@@ -284,9 +282,8 @@ body {
 
 .container_sobre_mim {
     display: flex;
-    width: 78vw;
-    height: auto;
-    margin: auto 7vw;
+    width: 85vw;
+    margin: 0 7vw;
     padding: 5%;
     text-align: justify;
     align-items: center;
@@ -327,6 +324,50 @@ body {
     text-align: justify;
 }
 
+.container_skills {
+display: flex;  
+flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+justify-content: center; /* Centraliza os itens na linha */
+width: 78vw;
+margin: 10% auto;
+font: normal normal 0.9rem "arial";
+border-radius: 1em;
+color: var(--color-0);
+background-image: url("../image/bg_body_resp.png");
+
+}
+
+.skills_lista{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.skills_item {
+    flex-grow: 1;
+    flex-basis: 22%; /* Para telas maiores, a largura base é 22% */
+    margin: 10px;  
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.skills_item img {
+width: 50%;
+margin: auto;
+border-radius: 1em;
+background-color: var(--color-1);
+min-height: 80px;
+border: 3px solid var(--color-2);
+padding: 15px;
+box-shadow: var(--color-5) 0px 0px 0px 2px inset,
+                var(--color-5) 10px -10px 0px -3px,
+var(--color-1) 10px -10px,
+var(--color-5) 20px -20px 0px -3px;
+    cursor: pointer;
+}
+
+
+
 /* ______________________________sessão projetos__________________________ */
 .sessao_3 {
     width: 100%;
@@ -339,7 +380,7 @@ body {
     display: flex;
     width: 85vw;
     flex-wrap: wrap;
-    margin: 15% auto;
+    margin: 0 auto;
     gap: 100px;
 
 }
@@ -358,7 +399,6 @@ body {
 
 .projeto_item {
     flex-grow: 1;
-
     border-radius: 1em;
     background-color: var(--color-1);
     width: 34vw;
@@ -387,7 +427,7 @@ body {
 
 .img_container {
     width: 50%;
-    margin: auto;
+    margin-bottom:5% auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,7 +461,6 @@ body {
     margin-top: 6%;
     align-items: center;
     font: normal bolder 1.5em 'cambria';
-
 }
 
 
@@ -541,10 +580,20 @@ footer {
     color: var(--color-1);
 }
 
-/* ____________________________________________________________________________________________________________ */
-/* ____________________________________________________________________________________________________________ */
-@media (min-width: 768px) {
+.footer {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: var(--black);
+}
 
+footer p{
+    font: normal normal 1em 'arial';
+}
+
+/* ____________________________________________________________________________________________________________ */
+/* ____________________________________________________________________________________________________________ *//* Estilos para Desktop */
+@media (min-width: 768px) {
     .container_cabecalho {
         display: flex;
         flex-direction: row;
@@ -595,7 +644,7 @@ footer {
     .link_nav {
         display: flex;
         width: 7vw;
-        margin: 0px;
+        margin: 0;
         padding: 5%;
     }
 
@@ -623,11 +672,10 @@ footer {
 
     .img_container {
         width: 25%;
-        margin: 0 auto;
+        margin: 3% auto;
         display: flex;
         justify-content: center;
         align-items: center;
-       
         text-align: center;
     }
 
@@ -635,14 +683,12 @@ footer {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-top: 5%;
         font: normal normal 1em 'Protest Strike';
     }
 
     .container__apresentacao p {
         width: 28vw;
         font-size: 2rem;
-
     }
 
     .titulo_apresentacao {
@@ -670,20 +716,18 @@ footer {
             padding: 1%;
             border-radius: 0.5em;
         }
-
     }
 
     .foto-miriam {
-
         border: 0.7em solid var(--color-1);
         border-radius: 1em;
-        margin: calc(20vh - 5vw) auto 0 auto;
+        margin: calc(20vh - 5vw) auto 0;
         box-shadow:
-            5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
-            10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
-            20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
-            30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
-            40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
+            5px -5px 0 -3px var(--color-2), 10px -10px 0 -3px var(--color-2),
+            10px -10px 0 -3px var(--color-5), 10px -10px 0 -3px var(--color-5),
+            20px -20px 0 -3px var(--color-4), 20px -20px 0 -3px var(--color-4),
+            30px -30px 0 -3px var(--color-3), 30px -30px 0 -3px var(--color-3),
+            40px -40px 0 -3px var(--color-0), 40px -40px 0 -3px var(--color-0);
         transition: box-shadow 0.7s, top 0.7s, left 0.7s;
         top: 0;
         left: 0;
@@ -696,16 +740,12 @@ footer {
         0% {
             transform: translateY(0px);
         }
-
         50% {
             transform: translateY(-30px);
         }
-
         100% {
             transform: translateY(0px);
-
         }
-
     }
 
     .foto-miriam:hover {
@@ -729,7 +769,7 @@ footer {
         display: flex;
         width: 75vw;
         height: 55vh;
-        margin: auto;
+        margin: 0 auto;
         padding: 5%;
         text-align: justify;
         align-items: center;
@@ -745,7 +785,6 @@ footer {
             var(--color-1) 30px -30px, var(--color-5) 40px -40px 0px -3px,
             var(--color-1) 40px -40px;
     }
-
 
     .titulo_sobre_mim {
         color: var(--color-text-white);
@@ -764,20 +803,35 @@ footer {
         color: var(--color-text-white);
         height: 10vh;
         margin-top: 1vh auto;
-        font: normal normal 1em 'arial'
+        font: normal normal 1em 'arial';
+    }
+
+    .container_skills {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas no mobile */
+        grid-gap: 10px; /* Espaço entre os itens */
+        width: 90vw;
+    }
+
+    .skills_lista {
+        display: flex;
+    }
+
+    .skills_item img {
+        width: 100%; /* Garante que cada item ocupe toda a coluna no grid */
+        height: auto;
+        margin: 5px;
     }
 
     .contato {
         width: 5vw;
         margin-left: 10%;
         color: var(--color-4);
-
     }
 
     .contato ul {
+        display: flex;
         width: 50vw;
         gap: 10px;
-        flex-direction: column;
     }
 
     .contato__icon {
@@ -803,7 +857,7 @@ footer {
         display: flex;
         width: 90vw;
         flex-wrap: wrap;
-        margin: 5% auto;
+        margin: 0 auto;
         gap: 40px;
     }
 
@@ -818,122 +872,43 @@ footer {
         box-shadow:
             var(--color-5) 0px 0px 0px 2px inset,
             var(--color-5) 10px -10px 0px -3px,
-            var(--color-1) 10px -10px,
-            var(--color-5) 20px -20px 0px -3px;
-        position: relative;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-        text-decoration: none;
-        list-style: none;
+            var(--color-2) 10px -10px,
+            var(--color-5) 20px -20px 0px -3px,
+            var(--color-2) 20px -20px,
+            var(--color-5) 30px -30px 0px -3px,
+            var(--color-2) 30px -30px,
+            var(--color-5) 40px -40px 0px -3px,
+            var(--color-2) 40px -40px;
+        transition: 0.5s;
     }
 
-    .img_projeto {
-        float: left;
-        margin: 1%;
-    }
-
-    .titulo_card_item{
-        font: normal bolder 1em 'cambria';
-    }
-
-    .links_card {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font: normal normal 1em 'cambria';
-    }
-
-    .link_card {
-        border-radius: 0.5em;
-        padding: 2%;
-        width: 10vw;
-        color: var(--color-3);
-        background-color: var(--color-5);
-        text-align: center;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    .link_card:hover {
-        background-color: var(--color-0);
-        color: var(--color-text-claro);
-        border-radius: 2em;
-        font-weight: bolder;
-    }
-
-    form {
-        width: 80vw;
-        margin: auto;
-        margin-top: 25vh;
-        padding: 5vh auto;
-        background-color: var(--background);
-        border-radius: 1em;
+    .projeto_item:hover {
         box-shadow:
-            5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
-            10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
-            20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
-            30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
-            40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
-        transition: box-shadow 0.7s, top 0.7s, left 0.7s;
-        cursor: pointer;
-
+            var(--color-5) 0px 0px 0px 2px inset,
+            var(--color-5) 10px -10px 0px -3px,
+            var(--color-2) 10px -10px,
+            var(--color-5) 20px -20px 0px -3px,
+            var(--color-2) 20px -20px,
+            var(--color-5) 30px -30px 0px -3px,
+            var(--color-2) 30px -30px,
+            var(--color-5) 40px -40px 0px -3px,
+            var(--color-2) 40px -40px;
+        transform: scale(1.02);
     }
 
-    .form_item {
+    .footer {
         display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        margin: auto;
-        width: 80%;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        background-color: var(--color-1);
+        color: var(--color-4);
+        font-size: 1.2em;
     }
 
-    label {
-        display: inline-block;
-        width: 100px;
-    }
-
-    input {
-        width: calc(100% - 120px);
-        margin-bottom: 2px;
-        background-color: var(--color-text-claro);
+    .footer a {
+        color: var(--color-4);
     }
 }
 
-textarea {
-    margin-bottom: 2vw;
-    background-color: var(--color-text-claro);
-    border-radius: 0.5em;
-    border: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10vh;
-    width: 100vw;
-    height: 10vh;
-   
-    background-color: var(--black);
-}
-
-footer p{
-    display: flex;
-    font: normal normal 1em 'arial';
-    justify-content: center;
-
-
-    
-}
