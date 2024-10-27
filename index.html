@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link class="icon" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css's/style.css">
-    npm i bootstrap-icons
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Portfólio</title>
 </head>
@@ -54,13 +54,12 @@
     </header>
     <span id="home"></span>
     <main>
-        <section class="container__apresentacao">
+        <section class="container_apresentacao">
 
             <picture>
                 <source srcset="image/miriam_img2.jpeg" media="(max-width: 768px)">
                 <img class="foto-miriam" src="image/miriam_img2.jpeg" alt="foto-miriam">
 
-            </picture>
             </picture>
             <div class="text_apresentacao">
                 <p>
@@ -89,12 +88,13 @@
                         <span class="destaque">habilidades</span>
                         <span class="tooltip-text">Para alcançarmos a excelência é indubitável desenvolvermos
                             habilidades para sermos melhores em cada novo passo.Karlyanny Salgado</span>
-                    </span>.
+                    </span>
                 </p>
 
             </div>
 
         </section>
+     
         <span id="sobre_mim"></span>
         <div class="sessão_2">
 
@@ -187,7 +187,7 @@
                 <li class="projeto_item">
                     <h2 class="titulo_card">Decodificador</h2>
                     <img class="img_projeto" src="image/icons_projeto/codificador.png" alt="projeto bookflix">
-                    <p class="descricao_item">O código JavaScript implementa um sistema de criptografia e descrição de texto, utilizando dois arrays: um com letras do alfabeto e outro com caracteres especiais correspondentes. As funções criptografarTexto e descriptografarTexto realizam a conversão entre os arrays. O sistema inclui botões para criptografar, descrever, copiar para a área de transferência e limpar campos. Os eventos são gerenciados com addEventListener para garantir uma interface interativa e responsiva ao usuário.</p>
+                    <p class="descricao_item">Este JavaScript implementa um sistema de criptografia e descrição de texto, usando dois arrays: um com letras e outro com caracteres especiais. As funções criptografarTexto e descriptografarTexto fazem a conversão. Botões permitem criptografar, descrever, copiar e limpar. Os eventos são gerenciados com addEventListener para uma interface responsiva.</p>
                     <div class="links_card">
                         <a class="link_card" href="https://dev-miriambatista.github.io/encriptador/" target="_blank"><i class="bi bi-github"></i>Web</a>
                         <a class="link_card" href="https://github.com/dev-miriambatista/encriptador" target="_blank"><i class="bi bi-github"></i>GitHub</a>
@@ -195,9 +195,6 @@
                 </li>
             </ul>
         </div>
-
-
-
 
         <form action="seu_script_de_processamento.php" method="post" id="contato">
             <img class="img_container" src="image/post-it/red38.png" alt="">
@@ -283,6 +280,7 @@
         window.onresize = () => {
             mudouTamanho(); // Chama a função sempre que a janela for redimensionada
         };
+
     </script>
 </body>
 

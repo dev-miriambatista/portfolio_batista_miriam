@@ -48,6 +48,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.img_container:hover {
+    transform: scale(1.2);
 }
 
 .container_cabecalho {
@@ -145,7 +150,7 @@ body {
 
 }
 
-.container__apresentacao {
+.container_apresentacao {
     display: flex;
     width: 100%;
     height: 115vh;
@@ -210,6 +215,18 @@ body {
     animation: float 5s ease-in-out infinite;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .foto-miriam:hover {
     top: -40px;
     left: 40px;
@@ -222,7 +239,6 @@ body {
 
 .container_sobre_mim {
     display: flex;
-    width: 75vw;
     margin-left: 9vw;
     padding: 2%;
     text-align: justify;
@@ -252,8 +268,9 @@ body {
 
 .img_sobre_mim {
     float: left;
-    margin: 2%;
+    margin: 1%;
     border-radius: 0.5em;
+    width: 8vw;
 }
 
 .titulo_sobre_mim {
@@ -276,7 +293,7 @@ body {
 
 .container_skills {
     width: 75vw;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 1%;
     display: flex;
     flex-wrap: wrap;
@@ -332,14 +349,20 @@ body {
     margin: 0 auto;
 }
 
-.img_projeto {
-    float: left;
-    max-width: 12vw;
-}
-
 .descricao_item{
     height: 60vh;
     text-align: justify;
+}
+
+.img_projeto{
+    width: 20vw;
+    float: left;
+    border-radius: 0.5em;
+    transition: transform 1s ease
+}
+
+.img_projeto:hover{
+    scale: ;
 }
 
 /* Estilos de cada projeto */
@@ -347,6 +370,7 @@ body {
     flex-grow: 1;
     min-width: 280px;
     max-width: 30%;
+    height: auto;
     margin: 7vh auto;
     border-radius: 1em;
     background-color: var(--color-1);
@@ -360,9 +384,7 @@ body {
 .links_card {
     display: flex;
     justify-content: space-around;
-    margin-top: 5vh;
-
-
+    margin-top: 10vh;
 }
 
 .link_card {
@@ -377,8 +399,8 @@ body {
     list-style: none;
     background-color: var(--color-2);
     color: var(--black);
-    padding: 4%;
     border-radius: 0.5em;
+    transition: transform .5s ease;
 }
 
 
@@ -449,8 +471,8 @@ textarea {
 }
 
 button {
-    width: 17vw;
-    background-color: var(--color-0);
+    width: 10vw;
+    background-color: var(--color-5);
     color: var(--black);
     padding: 0.5vh 1vw;
     border-radius: 0.5em;
@@ -465,7 +487,7 @@ button {
 }
 
 button:hover {
-    background-color: #A0A676;
+    background-color:var(--color-1);
     box-shadow: 0 0.9vh 1.2vh #0000004d;
 }
 
@@ -622,14 +644,14 @@ footer p {
 
     .img_container {
         width: 25%;
-        margin: 3% auto;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .container__apresentacao {
+    .container_apresentacao {
         display: flex;
         height: 115vh;
         flex-direction: row;
@@ -637,7 +659,7 @@ footer p {
         font: normal normal 1em 'Protest Strike';
     }
 
-    .container__apresentacao p {
+    .container_apresentacao p {
         width: 28vw;
         font-size: 2rem;
     }
@@ -696,47 +718,28 @@ footer p {
             transform: scale(1.05);
             padding: 5%;
         }
-
         .foto-miriam {
-            border: 0.7em solid var(--color-1);
-            border-radius: 1em;
-            margin: calc(20vh - 5vw) auto 0;
-            box-shadow:
-                5px -5px 0 -3px var(--color-2), 10px -10px 0 -3px var(--color-2),
-                10px -10px 0 -3px var(--color-5), 10px -10px 0 -3px var(--color-5),
-                20px -20px 0 -3px var(--color-4), 20px -20px 0 -3px var(--color-4),
-                30px -30px 0 -3px var(--color-3), 30px -30px 0 -3px var(--color-3),
-                40px -40px 0 -3px var(--color-0), 40px -40px 0 -3px var(--color-0);
-            transition: box-shadow 0.7s, top 0.7s, left 0.7s;
-            top: 0;
-            left: 0;
-            cursor: pointer;
-            transform: translateY(0px);
+            /* outras propriedades */
             animation: float 5s ease-in-out infinite;
         }
-
+        
         @keyframes float {
             0% {
                 transform: translateY(0px);
             }
-
             50% {
                 transform: translateY(-30px);
             }
-
             100% {
                 transform: translateY(0px);
             }
         }
-
+        
         .foto-miriam:hover {
-            top: -40px;
-            left: 40px;
-            box-shadow: 0 0 0 -3px var(--color-1), 0 0 0 0 var(--color-1),
-                0 0 0 -3px var(--color-2), 0 0 0 0 var(--color-2),
-                0 0 0 -3px var(--color-3), 0 0 0 0 var(--color-3),
-                0 0 0 -3px var(--color-4), 0 0 0 0 var(--color-4);
+            transform: translate(40px, -40px);
+            box-shadow: 0 0 0 -3px var(--color-1), /* outras propriedades de sombra */
         }
+        
 
         .container_sobre_mim {
             display: flex;
@@ -836,28 +839,37 @@ footer p {
             justify-content: space-around;
             /* Espaça os itens uniformemente */
             align-items: flex-start;
-            width: 100%;
+            width: 75vw;
             /* Largura total */
             margin: 0 auto;
         }
 
         .projeto_item {
             flex-grow: 1;
+            min-width: 280px;
+            max-width: 30%;
+            height: 75vh;
+            margin: 7vh auto;
             border-radius: 1em;
             background-color: var(--color-1);
-            width: 30%;
-            min-height: 80px;
-            border: 3px solid var(--color-2);
             padding: 15px;
-            box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px, var(--color-5) 30px -30px 0px -3px, var(--color-2) 30px -30px, var(--color-5) 40px -40px 0px -3px, var(--color-2) 40px -40px;
+            box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px;
             transition: 0.5s;
+            text-decoration: none;
+            list-style: none;
+
+        .img_projeto {
+            max-width: 10vw;
+            border-radius: 0.5em;
+            transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+            
         }
 
-        .projeto_item img {
-            max-width: 100%;
-            /* Garante que a imagem não ultrapasse o limite do container */
-            border-radius: 0.5em;
+        .img_projeto:hover {
+            transform: scale(1.2);
         }
+
+
 
         .projeto_item h3 {
             font-size: 1.5em;
@@ -866,7 +878,7 @@ footer p {
         }
 
         .descricao_item{
-            height: 10vh;
+            height: 55vh;
         }
 
         .projeto_item p {
@@ -885,11 +897,19 @@ footer p {
         }
 
         .link_card {
-
             background-color: var(--color-5);
             color: var(--black);
             padding: 2%;
             border-radius: 0.5em;
+            transition: transform 0.5s ease;
+        }
+
+        .link_card:hover {
+            list-style: none;
+            background-color: var(--color-2);
+            color: var(--black);
+            border-radius: 0.5em;
+            transform: scale(1.2);
         }
     }
 
