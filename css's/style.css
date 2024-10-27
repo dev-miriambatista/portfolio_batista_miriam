@@ -27,7 +27,7 @@
 *:after,
 *:before {
     box-sizing: border-box;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
@@ -39,6 +39,15 @@ body {
     flex-direction: column;
     color: var(--color-0);
     overflow-x: hidden;
+}
+
+.img_container {
+    width: 55%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .container_cabecalho {
@@ -62,13 +71,13 @@ body {
 }
 
 .titulo__cabecalho {
-    width: 50vw;
+    width: 15vw;
     height: auto;
     padding: 1.5;
     font-size: 1.5rem;
     font: normal bolder 2em 'Zilla Slab';
     text-align: left;
-    margin: 0;
+    margin: 0 0 0 5vw;
     color: var(--color-0);
 }
 
@@ -122,7 +131,7 @@ body {
 .skills {
     display: flex;
     width: 32vw;
-    height: 8vh;
+    height: 5vh;
 }
 
 .link_nav {
@@ -184,7 +193,7 @@ body {
     min-height: 90px;
     border: 0.7em solid var(--color-1);
     border-radius: 1em;
-    margin: calc(10vh - 10px) auto 0 auto;
+    margin: calc(10vh - 10px) 0px 0px 22px;
     box-shadow:
         5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
         10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
@@ -213,6 +222,16 @@ body {
 
 .container_sobre_mim {
     display: flex;
+    width: 75vw;
+    margin-left: 9vw;
+    padding: 2%;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    font: normal normal 0.9rem "arial";
+    border-radius: 1em;
+    color: var(--color-0);
+    flex-direction: column;    display: flex;
     width: 75vw;
     margin: auto;
     padding: 2%;
@@ -256,25 +275,15 @@ body {
 }
 
 .container_skills {
-    width: 100%;
-    margin: 5% auto;
+    width: 75vw;
+    margin: 10% auto;
     padding: 1%;
-        
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-   
     font: normal normal 0.9rem "arial";
     border-radius: 1em;
     color: var(--color-0);
-    box-shadow:
-        5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
-        10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
-        20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
-        30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
-        40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
 }
 
 .skills_lista {
@@ -287,6 +296,7 @@ body {
     font-size: 3em;
     list-style: none;
     padding: 3%;
+    width: 75vw;
 }
 
 .skills_item {
@@ -296,11 +306,11 @@ body {
     width: 12vw;
     height: auto;
     flex: 1 1 30%;
-    /* Define proporções para quebra */
+    margin-bottom: 3vh;
 }
 
 .skills_item i {
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 0.2em;
     color: var(--black);
     box-shadow: var(--color-5) 0px 0px 0px 1px inset, var(--color-5) 10px -10px 0px -3px,
@@ -318,44 +328,56 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
+    width: 75vw;
     margin: 0 auto;
 }
 
-.img_projeto{
+.img_projeto {
     float: left;
-    width: 7vw;
+    max-width: 12vw;
+}
+
+.descricao_item{
+    height: 60vh;
+    text-align: justify;
 }
 
 /* Estilos de cada projeto */
 .projeto_item {
-    flex-grow: 1; /* Permite que os itens cresçam */
-    min-width: 250px; /* Define um tamanho mínimo para quebra de linha */
-    max-width: 25%; /* Limita a largura em telas maiores */
-    margin: 10px;
+    flex-grow: 1;
+    min-width: 280px;
+    max-width: 30%;
+    margin: 7vh auto;
     border-radius: 1em;
     background-color: var(--color-1);
     padding: 15px;
-    box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, 
-        var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px;
+    box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px;
     transition: 0.5s;
     text-decoration: none;
     list-style: none;
 }
 
-.links_card{
+.links_card {
     display: flex;
     justify-content: space-around;
     margin-top: 5vh;
-  
+
 
 }
 
-.link_card{
+.link_card {
     list-style: none;
     background-color: var(--color-5);
     color: var(--black);
-    padding: 2%;
+    padding: 3%;
+    border-radius: 0.5em;
+}
+
+.link_card:hover {
+    list-style: none;
+    background-color: var(--color-2);
+    color: var(--black);
+    padding: 4%;
     border-radius: 0.5em;
 }
 
@@ -368,14 +390,7 @@ form {
     min-height: 90px;
     border: 0.7em solid var(--color-1);
     border-radius: 1em;
-    margin-top: 5%;
-    margin: calc(25vh - 10px) 160px 0 auto;
-    box-shadow:
-        5px -5px 0 -3px var(--color-2), 10px -10px var(--color-2),
-        10px -10px 0 -3px var(--color-5), 10px -10px var(--color-5),
-        20px -20px 0 -3px var(--color-4), 20px -20px var(--color-4),
-        30px -30px 0 -3px var(--color-3), 30px -30px var(--color-3),
-        40px -40px 0 -3px var(--color-0), 40px -40px var(--color-0);
+    margin: calc(8vh - 10px) auto 0 auto;
     transition: box-shadow 0.7s, top 0.7s, left 0.7s;
     cursor: pointer;
 }
@@ -389,26 +404,32 @@ form {
 label {
     font: normal normal 1em 'arial';
     display: flex;
-    width: 16vw;
+    width: 0;
 }
 
 input {
-    width: 50vw;
+    width: 65vw;
     height: 4vh;
     margin: 2% auto;
     background-color: var(--color-text-claro);
     border-radius: 0.5em;
     border: none;
+    padding: 2%;
+}
 
+::placeholder{
+    color: var(--black);
 }
 
 textarea {
-    width: 50vw;
+    width: 65vw; 
     height: 10vh;
     margin: 2% auto;
     background-color: var(--color-text-claro);
     border-radius: 0.5em;
     border: none;
+    font-family: arial;
+    padding: 2%;
 }
 
 
@@ -416,7 +437,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8%;
 }
 
 .titulo_contato {
@@ -479,17 +499,17 @@ footer {
     background-color: var(--black);
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
-.contato{
+.contato {
     display: flex;
     width: 100%;
     background-color: var(--black);
     flex-direction: column;
     margin: 14%;
-    
+
 }
 
 .lista__contato {
@@ -509,11 +529,11 @@ footer p{
     justify-content: center;
 }
 
-.contato li{
+.contato li {
     margin: 5%;
 }
 
-.contato a{
+.contato a {
     margin: 5%;
 }
 
@@ -547,6 +567,7 @@ footer p{
 
     .navegador {
         display: flex;
+        width: 75vw;
     }
 
     .lista_cabecalho {
@@ -588,8 +609,7 @@ footer p{
     .yellow:hover,
     .orange:hover,
     .green:hover,
-    .skills:hover
-     {
+    .skills:hover {
         transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
         transform: scale(1.2);
     }
@@ -810,63 +830,67 @@ footer p{
                 var(--color-1) 0px 0px 5px 0px;
         }
 
-            .container_projetos {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                /* Espaça os itens uniformemente */
-                align-items: flex-start;
-                width: 100%;
-                /* Largura total */
-                margin: 0 auto;
-            }
-
-            .projeto_item {
-                flex-grow: 1;
-                border-radius: 1em;
-                background-color: var(--color-1);
-                width: 30%;
-                min-height: 80px;
-                border: 3px solid var(--color-2);
-                padding: 15px;
-                box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px, var(--color-5) 30px -30px 0px -3px, var(--color-2) 30px -30px, var(--color-5) 40px -40px 0px -3px, var(--color-2) 40px -40px;
-                transition: 0.5s;
-            }
-
-            .projeto_item img {
-                max-width: 100%;
-                /* Garante que a imagem não ultrapasse o limite do container */
-                border-radius: 0.5em;
-            }
-
-            .projeto_item h3 {
-                font-size: 1.5em;
-                color: var(--color-1);
-                text-align: center;
-            }
-
-            .projeto_item p {
-                text-align: justify;
-            }
-
-            
-
-.links_card{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-    text-decoration: none;
-    list-style: none;
-
-}
-
-.link_card{
- 
-    background-color: var(--color-5);
-    color: var(--black);
-    padding: 2%;
-    border-radius: 0.5em;
-}
+        .container_projetos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* Espaça os itens uniformemente */
+            align-items: flex-start;
+            width: 100%;
+            /* Largura total */
+            margin: 0 auto;
         }
 
+        .projeto_item {
+            flex-grow: 1;
+            border-radius: 1em;
+            background-color: var(--color-1);
+            width: 30%;
+            min-height: 80px;
+            border: 3px solid var(--color-2);
+            padding: 15px;
+            box-shadow: var(--color-5) 0px 0px 0px 2px inset, var(--color-5) 10px -10px 0px -3px, var(--color-2) 10px -10px, var(--color-5) 20px -20px 0px -3px, var(--color-2) 20px -20px, var(--color-5) 30px -30px 0px -3px, var(--color-2) 30px -30px, var(--color-5) 40px -40px 0px -3px, var(--color-2) 40px -40px;
+            transition: 0.5s;
+        }
+
+        .projeto_item img {
+            max-width: 100%;
+            /* Garante que a imagem não ultrapasse o limite do container */
+            border-radius: 0.5em;
+        }
+
+        .projeto_item h3 {
+            font-size: 1.5em;
+            color: var(--color-1);
+            text-align: center;
+        }
+
+        .descricao_item{
+            height: 10vh;
+        }
+
+        .projeto_item p {
+            text-align: justify;
+        }
+
+
+
+        .links_card {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5vh;
+            text-decoration: none;
+            list-style: none;
+
+        }
+
+        .link_card {
+
+            background-color: var(--color-5);
+            color: var(--black);
+            padding: 2%;
+            border-radius: 0.5em;
+        }
     }
+
+}
