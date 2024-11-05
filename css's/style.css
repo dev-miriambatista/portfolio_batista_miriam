@@ -270,7 +270,7 @@ body {
     float: left;
     margin: 2%;
     border-radius: 0.5em;
-    width: 13vw;
+    width: 10vw;
 }
 
 .titulo_sobre_mim {
@@ -414,6 +414,7 @@ body {
     align-items: flex-start;
     width: 75vw;
     margin: 0 auto;
+    font-family: arial;
 }
 
 .descricao_item{
@@ -426,7 +427,7 @@ body {
     flex-grow: 1;
     min-width: 280px;
     max-width: 30%;
-    height: 65vh;
+    height: 70vh;
     margin: 7vh auto;
     border-radius: 1em;
     background-color: var(--color-1);
@@ -445,7 +446,7 @@ body {
 .links_card {
     display: flex;
     justify-content: space-around;
-    margin-top: 10vh;
+    margin-top: 13vh;
 }
 
 .link_card {
@@ -563,10 +564,8 @@ footer {
     background-color: var(--black);
     justify-content: center;
     color: var(--color-1);
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 .lista__contato {
     text-decoration: none;
     list-style: none;
@@ -574,7 +573,13 @@ footer {
 
 .contato__icon {
     display: flex;
+    transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transform: scale(1.2);
+}
 
+.contato li:hover{
+    transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transform: scale(1.2);
 }
 
 .footer {
@@ -584,7 +589,7 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin: 3%;
 }
 
 .contato {
@@ -601,6 +606,7 @@ footer p {
     align-items: center;
     justify-content: space-around;
     padding: 1%;
+    justify-content: center;
 }
 
 .contato__icon {
@@ -612,6 +618,12 @@ footer p {
     align-items: center;
     justify-content: center;
 }
+.contato__icon:hover{
+    transition: font 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transform: scale(1.2);
+
+}
+
 
 .contato li {
     margin: 5%;
@@ -954,8 +966,6 @@ footer p {
             text-align: justify;
         }
 
-
-
         .links_card {
             display: flex;
             justify-content: space-around;
@@ -982,4 +992,5 @@ footer p {
         }
     }
 
+    }
 }
