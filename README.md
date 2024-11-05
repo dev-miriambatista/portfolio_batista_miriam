@@ -35,7 +35,7 @@ O site foi todo pensado para ser leve e agradável de navegar. Alguns detalhes d
 
 1. Clone este repositório para sua máquina:
    bash
-   git clone (https://github.com/dev-miriambatista/AluraPlay.git)
+   git clone https://github.com/dev-miriambatista/AluraPlay.git
 
 2. Navegue até o diretório do projeto:
    bash
